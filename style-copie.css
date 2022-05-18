@@ -1,0 +1,290 @@
+/* font common */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+/* font p */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
+body,
+* {
+    background-color: beige;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.logo__title,
+h1,
+.nav__bar {
+    padding-bottom: 1em;
+}
+.logo__title {
+    letter-spacing: 2px;
+}
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.don__item {
+    font-size: 1.3em;
+    padding:  0 1em;
+    text-decoration: none;
+}
+.don__item:hover {
+background-color: gray;
+color: rgb(142, 212, 180);
+border-radius: 10px;
+}
+
+h1 {
+    color: gold;
+    text-shadow: 1px 3p 5p 0.5;
+    transition: 0.7s;
+    text-shadow: 1px -1px 2px rgb(0 68 255);
+}
+
+h1:hover {
+
+    color: rgb(133, 117, 26);
+    transition: 0.5s;
+    text-shadow: none;
+}
+p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3em;
+}
+h1,
+ul li a,
+.section__title,
+.card__title,
+.info__title {
+    text-transform: uppercase;
+}
+
+.page__header {
+    padding-bottom: 2em;
+}
+
+#logo__title,
+#header__quote {
+    font-weight: 600;
+}
+
+#header__quote {
+    font-size: 1.2em;
+    color: rgb(48, 48, 148);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+ul li a {
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: blue;
+    background-color: #ece073;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+ul li {
+    padding: 3%;
+}
+
+ul li a:hover {
+    background-color: rgb(42, 42, 158);
+    color: rgb(243, 238, 233);
+}
+
+/******************* CARD SECTIONS *************************/
+.section__title,
+.card__section,
+.questions__section
+ {
+    margin-bottom: 1.5%;
+}
+
+.section__title {
+    background-color: rgb(106, 160, 160);
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 1%;
+
+}
+
+.card__title {
+    color: rgb(245, 22, 22);
+    padding-top: 1.4em;
+    padding-bottom: 2%;
+
+}
+
+.card__text,
+.card__price {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+
+}
+
+.card__text {
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+.card__price {
+    font-weight: 800;
+    color: red;
+    padding-bottom: 1em;
+}
+
+
+.card__img {
+    padding-bottom: 2%;
+}
+
+ .btn {
+     cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
+    color: aliceblue;
+    background-color: blue;
+    margin: 2% 0 0 0;
+    padding: 1% 3%;
+    border-radius: 10px;
+    font-weight: 700;
+} 
+.btn:hover {
+    color: rgb(18, 71, 117);
+    background-color: rgb(196, 196, 226);
+    transition: ease-in-out;
+  
+}
+
+/* ********************VIDEO ZONE****************** */
+#video__zone {
+    margin-top: 1.5em;
+   
+
+
+}
+
+#video__zone-quote {
+    font-weight: 600;
+    font-style: italic;
+    background-color: rgb(220, 238, 238);
+    border-radius: 10px;
+    color: rgb(22, 22, 236);
+    padding: 0.5em 2em;
+}
+/* ***************ASIDE******************************** */
+
+/* *******************INFO ZONE ************* */
+#aside__section {
+padding-bottom: 3%;
+
+}
+.infos__section {
+    margin-bottom: 5%;
+    background-color: rgb(134, 202, 214);
+}
+.info__block,
+.opinion__block {
+    padding: 2% 10%;
+    
+} 
+.info__title{
+    color: rgb(102, 19, 179);
+    padding: 1%;
+    letter-spacing: 2px;
+}
+
+/* ******************QUESTIONS ZONE***********/
+.questions__section {
+    margin-top: 9%;
+}
+.questions__title {
+    color: rgb(20, 102, 102);
+    padding-top: 1%;
+}
+.questions__text {
+    color: darkslategray;
+}
+#btn__home {
+    position: absolute;
+    font-size: .9em;
+    right: 1%;
+    background-color: rgb(148, 196, 53);
+    border-radius: 50%;
+}
+/************************* FOOTER********************** */
+ #page__footer {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    background-color: red;
+}
+
+#page__footer p {
+padding: 0.3em 1em;
+font-size: 1em;
+}
+
+ .icons {
+    padding-top: 4%;
+    display: flex;
+   padding-left: 5%;
+   justify-content: space-between;
+    
+} 
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 70px;
+   
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+ .fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+ .fa-instagram {
+    background: #b3336f;
+    color: white;
+}  
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    }
