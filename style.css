@@ -3,7 +3,7 @@
 /* font p */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
-body,
+
 * {
     background-color: beige;
     box-sizing: border-box;
@@ -28,19 +28,35 @@ h1,
 .nav__bar {
     padding-bottom: 1em;
 }
-.logo__title {
+.logo__title,
+.questions__title {
     letter-spacing: 2px;
 }
 #logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+     align-items: center;
+     padding: 0 1em;
 }
+
+ .don {
+    display: flex;
+    flex-direction: column;
+     align-items: center;  
+ }
 .don__item {
     font-size: 1.3em;
-    padding:  0 1em;
+    padding:  6px;
+    margin: 10px 3px;
     text-decoration: none;
-}
+    color: blue;
+    background-color: #ece073;
+    transition: 0.5s;
+    border-radius: 10px;
+   
+} 
+
+/* -------------------------------------------------------- */
 .don__item:hover {
 background-color: gray;
 color: rgb(142, 212, 180);
@@ -68,7 +84,8 @@ h1,
 ul li a,
 .section__title,
 .card__title,
-.info__title {
+.info__title,
+.questions__title {
     text-transform: uppercase;
 }
 
@@ -93,7 +110,9 @@ ul {
     text-align: center;
 
 }
-
+ul li {
+    padding: 3%;
+}
 ul li a {
     cursor: pointer;
     transition: 0.5s;
@@ -106,9 +125,7 @@ ul li a {
     border-radius: 10px;
 }
 
-ul li {
-    padding: 3%;
-}
+
 
 ul li a:hover {
     background-color: rgb(42, 42, 158);
@@ -132,21 +149,20 @@ ul li a:hover {
 }
 
 .card__title {
-    color: rgb(245, 22, 22);
+    color: rgb(173, 16, 113);
     padding-top: 1.4em;
     padding-bottom: 2%;
 
 }
 
-.card__text,
-.card__price {
+.card__text
+ {
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
+    font-weight: 600;
+    padding-bottom: 2%;
 
 }
-
-}
-
 
 .card__img {
     padding-bottom: 2%;
@@ -159,7 +175,7 @@ ul li a:hover {
     color: aliceblue;
     background-color: blue;
     margin: 2% 0 0 0;
-    padding: 1% 3%;
+    padding: 5px 10px;
     border-radius: 10px;
     font-weight: 700;
 } 
@@ -173,9 +189,6 @@ ul li a:hover {
 /* ********************VIDEO ZONE****************** */
 #video__zone {
     margin-top: 1.5em;
-   
-
-
 }
 
 #video__zone-quote {
@@ -189,32 +202,34 @@ ul li a:hover {
 /* ***************ASIDE******************************** */
 
 /* *******************INFO ZONE ************* */
-#aside__section {
-padding-bottom: 3%;
-
-}
-.infos__section {
+ .info__section {
     margin-bottom: 5%;
-    background-color: rgb(134, 202, 214);
-}
+    
+} 
 .info__block,
-.opinion__block {
+.question__block {
     padding: 2% 10%;
     
 } 
 .info__title{
     color: rgb(102, 19, 179);
-    padding: 1%;
+    padding: 2% 1%;
     letter-spacing: 2px;
 }
-
+info__img {
+    height: 100px;
+    width: 100px;
+}
+aside hr {
+    padding: 2% 0;
+}
 /* ******************QUESTIONS ZONE***********/
 .questions__section {
     margin-top: 9%;
 }
 .questions__title {
     color: rgb(20, 102, 102);
-    padding-top: 1%;
+    padding-top: 3%;
 }
 .questions__text {
     color: darkslategray;
@@ -225,6 +240,9 @@ padding-bottom: 3%;
     right: 1%;
     background-color: rgb(148, 196, 53);
     border-radius: 50%;
+}
+#last__btn {
+    margin-bottom: 2%;
 }
 /************************* FOOTER********************** */
  #page__footer {
