@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
 
 @media screen and (min-width: 375px) {
+
     body,
     * {
         background-color: beige;
@@ -14,78 +15,85 @@
         font-family: 'Playfair Display', serif;
         scroll-behavior: smooth;
         overflow-x: hidden;
-        
+
     }
-    
+
     #page {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-    
+
     }
-    .logo__title{
+
+    .logo__title {
         font-size: 2em;
     }
-    
+
     .logo__title,
     h1,
     .nav__bar {
         padding-bottom: 0.7em;
     }
+
     .logo__title,
     .questions__title {
         letter-spacing: 2px;
     }
+
     #logo {
         display: flex;
         justify-content: space-between;
-         align-items: center;
-         padding: 0 1em;
+        align-items: center;
+        padding: 0 1em;
     }
-    
-     .don {
+
+    .don {
         display: flex;
         flex-direction: column;
-         align-items: center;  
-     }
+        align-items: flex-end;
+
+    }
+
     .don__item {
-        font-size: 1.8em;
-        padding:  6px;
+        font-size: 1.7em;
+        padding: 6px;
         margin: 10px 3px;
         text-decoration: none;
         color: blue;
         background-color: #ece073;
         transition: 0.5s;
         border-radius: 10px;
-       
-    } 
-    
-    
-    .don__item:hover {
-    background-color: gray;
-    color: rgb(142, 212, 180);
-    border-radius: 10px;
+
     }
-    
+
+
+    .don__item:hover {
+        background-color: gray;
+        color: rgb(142, 212, 180);
+        border-radius: 10px;
+    }
+
     h1 {
         color: gold;
         text-shadow: 1px 3p 5p 0.5;
         transition: 0.7s;
         text-shadow: 1px -1px 2px rgb(0 68 255);
     }
-    
+
     h1:hover {
-    
+
         color: rgb(133, 117, 26);
         transition: 0.5s;
         text-shadow: none;
     }
+
     p {
         font-family: 'Cairo', sans-serif;
         font-size: 1.3em;
     }
+
     h1,
     ul li a,
     .section__title,
@@ -93,90 +101,115 @@
     .info__title,
     .questions__title {
         text-transform: uppercase;
+        
     }
     
     .page__header {
         padding-bottom: 2em;
     }
-    
+
     #logo__title,
     #header__quote {
         font-weight: 600;
     }
-    
+
     #header__quote {
         font-size: 1.2em;
         color: rgb(48, 48, 148);
     }
+
     /* ----------------Nav bar-------------------------------- */
     ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         text-align: center;
-    
+
     }
+
     ul li {
         padding: 3%;
     }
-    ul li a {
+
+    #nav__main li a,
+    #nav__info__questions li a {
+
         cursor: pointer;
         transition: 0.5s;
         text-decoration: none;
         font-weight: 700;
-        font-size: 2em;
+
         color: blue;
         background-color: #ece073;
         padding: 5px 20px;
         border-radius: 10px;
     }
-    
-    
-    
+
+    #nav__main a {
+        display: block;
+        font-size: 1.8em;
+    }
+
+
     ul li a:hover {
         background-color: rgb(42, 42, 158);
         color: rgb(243, 238, 233);
     }
-    
+
+    #nav__info__questions {
+        display: flex;
+
+    }
+
+    #nav__info__questions li {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #nav__info__questions li a {
+        letter-spacing: 1px;
+        font-size: 1.5em;
+    }
+
     /******************* CARD SECTIONS *************************/
     .section__title,
     .card__section,
-    .aside__questions__block
-     {
+    .aside__questions__block {
         margin-bottom: 1.5%;
     }
-    
+
     .section__title {
         background-color: rgb(106, 160, 160);
         border-radius: 10px;
         color: aliceblue;
         padding: 1%;
-    
+
     }
-    
+
     .card__title {
         color: rgb(173, 16, 113);
         padding-top: 1.4em;
         padding-bottom: 2%;
-    
+
     }
-    
-    .card__text
-     {
+
+    .card__text {
         font-family: 'Roboto Slab', serif;
         font-size: 1em;
         font-weight: 600;
         padding-bottom: 2%;
-    
+
     }
-    
+
     .card__img {
         padding-bottom: 2%;
     }
-    
-     .btn {
-         letter-spacing: 4px;
-         cursor: pointer;
+
+    .btn {
+        letter-spacing: 4px;
+        cursor: pointer;
         font-size: 2em;
         color: aliceblue;
         background-color: blue;
@@ -184,19 +217,20 @@
         padding: 5px 7px;
         border-radius: 10px;
         font-weight: 700;
-    } 
+    }
+
     .btn:hover {
         color: rgb(18, 71, 117);
         background-color: rgb(196, 196, 226);
         transition: ease-in-out;
-      
+
     }
-    
+
     /* ********************VIDEO ZONE****************** */
     #video__zone {
         margin-top: 1.5em;
     }
-    
+
     #video__zone-quote {
         font-weight: 600;
         font-style: italic;
@@ -205,42 +239,51 @@
         color: rgb(22, 22, 236);
         padding: 0.5em 2em;
     }
+
     /* ***************ASIDE******************************** */
-    
+
     /* *******************INFO ZONE ************* */
-     .info__questions__section {
+    .info__questions__section {
         margin-bottom: 10%;
-        
-    } 
+
+    }
+
     .aside__block,
     .aside__info__block,
     .question__block {
         padding: 2% 10%;
-        
-    } 
-    .info__title{
+
+    }
+
+    .info__title {
         color: rgb(102, 19, 179);
         padding: 2% 1%;
         letter-spacing: 2px;
     }
+
     info__img {
         height: 100px;
         width: 100px;
     }
+
     aside hr {
         padding: 2% 0;
     }
+
     /* ******************QUESTIONS ZONE***********/
-     .aside__questions__block {
+    .aside__questions__block {
         padding-top: 9%;
-    } 
+    }
+
     .questions__title {
         color: rgb(20, 102, 102);
         padding-top: 3%;
     }
+
     .questions__text {
         color: darkslategray;
     }
+
     #btn__home {
         position: absolute;
         font-size: 2em;
@@ -248,67 +291,72 @@
         background-color: rgb(148, 196, 53);
         border-radius: 50%;
     }
+
     #last__btn {
         margin-bottom: 2%;
     }
+
     /************************* FOOTER********************** */
-     #page__footer {
+    #page__footer {
         margin-top: 2%;
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
-    
+
     }
+
     .adresse {
         font-size: 2em;
     }
+
     #page__footer p {
-    padding: 0.3em 1em;
-    font-size: 1em;
+        padding: 0.3em 1em;
+        font-size: 1em;
     }
-    
-     .icons {
+
+    .icons {
         padding-top: 4%;
         display: flex;
-       padding-left: 5%;
-       justify-content: space-between;
-        
-    } 
-    
+        padding-left: 5%;
+        justify-content: space-between;
+
+    }
+
     .fa {
         padding: 10px;
         font-size: 30px;
         width: 70px;
-       
+
         text-align: center;
         text-decoration: none;
     }
-    
+
     .fa:hover {
         opacity: 0.7;
     }
-    
+
     .fa-facebook {
         background: #3B5998;
         color: white;
     }
-    
-     .fa-twitter {
+
+    .fa-twitter {
         background: #55ACEE;
         color: white;
-    } 
-    
-     .fa-instagram {
+    }
+
+    .fa-instagram {
         background: #c72d2d;
         color: white;
-    }  
+    }
+
     .fa-youtube {
         background: #bb0000;
         color: white;
-        }
-    
+    }
+
 }
 
 
-    /* ******************version tablette*************** */
-   
+/* ******************version tablette*************** */
+@media screen and (min-width: 768px) {}
