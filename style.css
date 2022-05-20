@@ -13,7 +13,7 @@
         margin: 0 1%;
         padding: 0;
         font-family: 'Playfair Display', serif;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         overflow-x: hidden;
 
     }
@@ -151,7 +151,9 @@
     }
 
 
-    ul li a:hover {
+    #nav__main li a:hover,
+    #nav__info__questions li a:hover
+     {
         background-color: rgb(42, 42, 158);
         color: rgb(243, 238, 233);
     }
@@ -172,6 +174,7 @@
         letter-spacing: 1px;
         font-size: 1.5em;
     }
+     
 
     /******************* CARD SECTIONS *************************/
     .section__title,
@@ -206,26 +209,58 @@
     .card__img {
         padding-bottom: 2%;
     }
-
-    .btn {
-        letter-spacing: 4px;
-        cursor: pointer;
-        font-size: 2em;
-        color: aliceblue;
-        background-color: blue;
-        margin: 2% 0 0 0;
-        padding: 5px 7px;
-        border-radius: 10px;
-        font-weight: 700;
-    }
-
-    .btn:hover {
-        color: rgb(18, 71, 117);
-        background-color: rgb(196, 196, 226);
-        transition: ease-in-out;
-
-    }
-
+          .link {
+              color: aliceblue;
+              background-color: blue;
+              cursor: pointer;
+              margin: 2% 0 0 0;
+              padding: 10px;
+              border-radius: 10px;
+              display: inline-block;
+              letter-spacing: 4px;
+              text-decoration: none;
+              font-size: 1.6em;
+              font-weight: 700;
+              text-align: center;
+              border: 1px solid rgb(10, 80, 80);
+          }
+          .link:hover {
+            color: rgb(18, 71, 117);
+            background-color: rgb(196, 196, 226);
+            transition: 0.4s;
+          }
+                .btn {
+            
+                    cursor: pointer;
+                    margin: 2% 0 0 0;
+                    padding: auto;
+                    border-radius: 10px;
+            
+                }
+          
+    
+        #btn__home {
+    
+            position: fixed;
+            bottom: 10px;
+            right: -100px;
+            opacity: 0.5;
+            padding: 9px 4px 0 4px;
+            right: 3%;
+            background-color: rgb(148, 196, 53);
+        }
+    
+        #btn__home a {
+            background-color: rgb(148, 196, 53);
+            font-size: 2em;
+    
+        }
+    
+        #btn__home:hover {
+            background-color: rgb(177, 235, 63);
+            opacity: 1;
+            transition: 0.5s;
+        }
     /* ********************VIDEO ZONE****************** */
     #video__zone {
         margin-top: 1.5em;
@@ -261,10 +296,10 @@
         letter-spacing: 2px;
     }
 
-    info__img {
+    /* .info__img {
         height: 100px;
         width: 100px;
-    }
+    } */
 
     aside hr {
         padding: 2% 0;
@@ -283,18 +318,11 @@
     .questions__text {
         color: darkslategray;
     }
+    
 
-    #btn__home {
-        position: absolute;
-        font-size: 2em;
-        right: 3%;
-        background-color: rgb(148, 196, 53);
-        border-radius: 50%;
-    }
-
-    #last__btn {
-        margin-bottom: 2%;
-    }
+#last__btn {
+    margin-bottom: 2%;
+}
 
     /************************* FOOTER********************** */
     #page__footer {
