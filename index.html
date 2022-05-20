@@ -29,8 +29,9 @@
 
                 <div class="don">
                     <a href="#" class="don__item">Faire une don</a>
-                    <a href="#" class="don__item">Adhérer</a>
                     <a href="#" class="don__item">Mon compte</a>
+                    <a href="#" class="don__item">Adhérer</a>
+                    
 
                 </div>
 
@@ -39,15 +40,19 @@
             <h1>Association française<br> La vie sans gluten</h1>
             <div></div>
             <nav class="nav__bar">
-                <ul>
+                <ul id="nav__main">
                     <li class="nav__item"><a href="index.html" id="home">Acceuil</a></li>
                     <li class="nav__item"><a href="#about">Qui sommes nous?</a></li>
                     <li class="nav__item"><a href="events.html">Evenements</a></li>
                     <li class="nav__item"><a href="#cuisine">Cuisine</a></li>
                     <li class="nav__item"><a href="#psychologue">Soutien psychologique</a></li>
                     <li class="nav__item"><a href="#actualité">Actualité</a></li>
-                    <li class="nav__item"><a href="#">Contacts</a></li>
+                    <li class="nav__item"><a href="#adresse">Contacts</a></li>
 
+                </ul>
+                <ul id="nav__info__questions">
+                    <li class="nav__item"><a href="#info">Info utile</a><a href="#qustions">Questions</a></li>
+                   
                 </ul>
             </nav>
             <hr>
@@ -72,7 +77,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                     <article class="card">
@@ -85,7 +90,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                     <article class="card">
@@ -99,7 +104,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                     <article class="card">
@@ -113,7 +118,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                     <article class="card">
@@ -126,7 +131,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                           <a class="link" href="#">Lire...</a>>
                         </footer>
                     </article>
                     <article class="card">
@@ -140,7 +145,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                     <article class="card">
@@ -154,7 +159,7 @@
 
                         </div>
                         <footer class="card__footer">
-                            <button class="btn">Lire...</button>
+                            <a class="link" href="#">Lire...</a>
                         </footer>
                     </article>
                 </div>
@@ -172,7 +177,7 @@
             <!--------------------ASIDE   Sinfo--------------------->
             <aside id="aside__section">
                 <div class="aside__block">
-                    <h2 class="section__title">Information utile</h2>
+                    <h2 class="section__title" id="info">Information utile</h2>
 
                    
                     <article class="aside__info__block">
@@ -187,9 +192,7 @@
                             par l'AFDIAG, l'Association Des Intolérants Au Gluten.</p>
 
 
-                        <button class="btn"><a
-                                href="https://nature-et-cie.fr/blog/22-detecter-le-gluten-sur-les-etiquettes#:~:text=Le%20logo%20%C2%AB%20%C3%A9pi%20de%20bl%C3%A9%20barr%C3%A9%20%C2%BB&text=Ce%20logo%20est%20appos%C3%A9%20sur,et%20la%20composition%20des%20produits."></a>Plus
-                            d'info</button>
+                        <a class="link" href="https://nature-et-cie.fr/blog/22-detecter-le-gluten-sur-les-etiquettes#:~:text=Le%20logo%20%C2%AB%20%C3%A9pi%20de%20bl%C3%A9%20barr%C3%A9%20%C2%BB&text=Ce%20logo%20est%20appos%C3%A9%20sur,et%20la%20composition%20des%20produits.">Plus d'info</a>
 
                     </article>
 
@@ -204,9 +207,8 @@
                             Produits et Prestations Remboursables (LPPR). Les personnes cœliaques sont remboursées à
                             60% du montant des vignettes LPPR grâce à la Sécurité Sociale. </p>
                         <footer class="info__footer">
-                            <button class="btn"><a
-                                    href="https://www.le-petit-minotier.fr/remboursement-securite-sociale#:~:text=Le%20remboursement%20des%20produits%20sans%20gluten%20se%20fait%20depuis%20la,%C3%AAtre%20rembours%C3%A9s%20avec%20certaines%20mutuelles."></a>Plus
-                                d'info</button>
+                            <a class="link"
+                                    href="https://www.le-petit-minotier.fr/remboursement-securite-sociale#:~:text=Le%20remboursement%20des%20produits%20sans%20gluten%20se%20fait%20depuis%20la,%C3%AAtre%20rembours%C3%A9s%20avec%20certaines%20mutuelles.">Plus d'info</a>
                         </footer>
                     </article>
 
@@ -221,9 +223,8 @@
                             incontournable. Avec l’aide éventuelle d’un diététicien, il est important d’apprendre à
                             reconnaître les aliments consommables et ceux à proscrire.</p>
                         <footer class="info__footer">
-                            <button class="btn"><a
-                                    href="https://www.ameli.fr/loire/assure/sante/themes/intolerance-gluten-maladie-coeliaque/regime-alimentaire"></a>Plus
-                                d'info</button>
+                          <a class="link"
+                                    href="https://www.ameli.fr/loire/assure/sante/themes/intolerance-gluten-maladie-coeliaque/regime-alimentaire">Plus d'info</a>
                         </footer>
 
                     </article>
@@ -234,7 +235,7 @@
                 <!------------------------- questions--------------------------->
                 <div class="aside__block">
                 
-                    <h2 class="section__title">Vous aves des questions?</h2>
+                    <h2 class="section__title" id="qustions">Vous aves des questions?</h2>
                     
                         <div class="aside__questions__block">
 
@@ -249,7 +250,7 @@
                                     ainsi que les participations aux manifestations extérieures : fête, événement
                                     sportif…
                                 </p>
-                                <button class="btn"><a href="#"></a>Lire la suite...</button>
+                                <a class="link" href="#">Lire la suite...</a>
                             </article>
                         </div>
 
@@ -262,7 +263,7 @@
                                     intérieur. Ces documents précisent les modalités de paiement de la cotisation. Les
                                     membres s'acquittent habituellement de la somme demandée dans les 6 premiers mois de
                                     l'année et il est possible de payer le montant en plusieurs fois.</p>
-                                <button class="btn" id="last__btn"><a href="#"></a>Lire la suite...</button>
+                                <a class="link" id="last__btn" href="#">Lire la suite...</a>
 
                                 <button class="btn" id="btn__home"><a href="index.html"><img src="media/arrow.png" alt="arrow" width="50" height="50"></a></button>
                             </article>
@@ -277,7 +278,7 @@
         </main>
         <!---------------FOOTER------------------->
         <footer id="page__footer">
-            <address class="adresse">Notre adresse: 18 rue Molière Lyon <br> téléphone: 0712345678</address>
+            <address class="adresse" id="adresse">Notre adresse: 18 rue Molière Lyon <br> téléphone: 0712345678</address>
             <div class="icons">
 
                 <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
