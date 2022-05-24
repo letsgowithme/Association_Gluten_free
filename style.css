@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
 @media screen and (min-width: 375px) {
 
@@ -17,6 +17,7 @@
         font-family: 'Playfair Display', serif;
         scroll-behavior: auto;
         overflow-x: hidden;
+        overflow-y: s;
 
     }
     body {
@@ -406,10 +407,10 @@
 }
 
 
-/* ******************VERSION TABLETTE************** */
-/* ******************version tablette*************** */
-/* ******************version tablette*************** */
-@media screen and (min-width: 768px) {
+/* ******************VERSION TABLETTE*@media min-width: 758px ************* */
+/* ******************version tablette**@media min-width: 758px************* */
+/* ******************version tablette**@media min-width: 758px************* */
+@media screen and (min-width: 758px) {
 
     body,
     * {
@@ -503,7 +504,7 @@
     }
 
 
-    /* ----------------Nav bar-------------------------------- */
+    /* ----------------Nav bar-@media min-width: 758px------------------------------- */
     ul {
         list-style: none;
         display: flex;
@@ -574,7 +575,7 @@
         justify-content: space-between;
     }
 
-    /* **********header image********* */
+    /* **********header image**@media min-width: 758px******* */
     .header__img {
         display: block;
         padding-bottom: 50px;
@@ -590,7 +591,7 @@
 
 
 
-    /******************* CARD SECTIONS *************************/
+    /******************* CARD SECTIONS **@media min-width: 758px***********************/
     .section__title,
     .card__section,
     .aside__article__questions {
@@ -645,15 +646,15 @@
 
 
 
-    /* ********************VIDEO ZONE****************** */
+    /* ********************VIDEO ZONE***@media min-width: 76758px8px*************** */
 
     #video__zone-quote {
         font-size: 1.4em;
     }
 
-    /* ***************ASIDE******************************** */
+    /* ***************ASIDE**@media min-width: 758px****************************** */
 
-    /* *******************INFO ZONE ************* */
+    /* *******************INFO ZONE **@media min-width: 758px*********** */
     .info__questions__section {
 
         margin: 0 1%;
@@ -699,7 +700,7 @@
         padding: 2% 0;
     }
 
-    /* ******************QUESTIONS ZONE***********/
+    /* ******************QUESTIONS ZONE*@media min-width: 758px*********/
     .aside__article__questions {
             padding-top: 1%;
             
@@ -725,69 +726,10 @@
         margin-bottom: 2%;
     } 
 
-    /************************* FOOTER********************** */
-    /* #page__footer {
-            margin-top: 2%;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2%;
     
-        }
-    
-        .adresse {
-            font-size: 1.6em;
-            color: rgb(23, 17, 87);
-        }
-    
-        #page__footer p {
-            padding: 0.3em 1em;
-            font-size: 1em;
-            color: rgb(17, 10, 119);
-        }
-    
-        .icons {
-            padding-top: 4%;
-            display: flex;
-            padding-left: 5%;
-            justify-content: space-between;
-    
-        }
-    
-        .fa {
-            padding: 10px;
-            font-size: 30px;
-            width: 70px;
-    
-            text-align: center;
-            text-decoration: none;
-        }
-    
-        .fa:hover {
-            opacity: 0.7;
-        }
-    
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-        }
-    
-        .fa-twitter {
-            background: #55ACEE;
-            color: white;
-        }
-    
-        .fa-instagram {
-            background: #c72d2d;
-            color: white;
-        }
-    
-        .fa-youtube {
-            background: #bb0000;
-            color: white;
-        } */
 }
 
-/****************page ENENTS*************** */
+/****************page ENENTS*@media min-width: 758px************** */
 .video {
     height: 426px;
     width: 636px;
@@ -797,15 +739,299 @@
     background-color: rgb(116, 128, 16);
 }
 
-/* ********************@media (min-width: 1024px)***** */
+/* ********************@media (min-width: 1574px)****************** */
+/* ********************@media (min-width: 1574px)******************* */
+/* ********************@media (min-width: 1574px)********************* */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1574px) {
     body {
-        background-color: rgb(25, 155, 42);
+        background-color: rgb(206, 236, 171);
+        
     }
-
+    /* #page {
+        margin: 2%;
+        display: flex;
+    } */
     .header__img {
         display: block;
 
     }
+    /* body,
+     {
+
+        margin: 0 1%;
+
+    } */
+#logo {
+    margin-left: 0;
+    padding-left: 0;
+}
+    .logo__title {
+        font-size: 1.6em;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .don {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .don__item {
+        font-size: 1.1em;
+        padding: 6px 10px;
+        color: rgb(7, 7, 228);
+        background-color: #f3ba8b;
+    }
+    .don__item:nth-child(3) {
+        padding: 5px 35px;
+    }    
+    .don__item:nth-child(2) {
+        padding: 5px 14px;
+    }    
+
+
+    h1 {
+       border: none;
+       
+        text-shadow: rgb(0 68 255) -5px 2px 4px;
+        font-size: 2.7em;
+        /* background-color: #bb3e3e; */
+        background-color: rgb(145, 5, 70);
+        padding: 9px;
+    }
+
+    h1:hover {
+        letter-spacing: 4px;
+        color: rgb(250, 240, 106);  
+        text-shadow: rgb(0 68 255) -5px 2px 6px;
+    }
+
+    p {
+        font-family: 'Merriweather', serif;
+        font-size: 2em;
+    }
+
+    #logo__title {
+        font-weight: 600;
+    }
+
+
+    /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
+    .nav__bar {
+        display: flex;
+        width: 100%;
+        background-color: #f3ba8b;
+        padding: 0.04%;
+      
+    } 
+    
+    .nav__bar li {
+    padding-right: 10px;
+    
+    }
+    .nav__bar li,
+    #nav__info__questions li {
+        
+        font-size: 0.9em;    
+    }
+    
+    #nav__main li a,
+    #nav__info__questions li a {
+        background: none;
+       
+    }
+
+    /* #nav__main li #home {
+        display: block;
+        visibility:visible
+    } */
+
+    #nav__info__questions li  {
+        padding: 4px 0;
+        display: flex;
+        justify-content: flex-start;
+        /* justify-content: center; */
+      
+       
+    }
+
+    #nav__main li a:hover,
+    #nav__info__questions li a:hover {
+        background-color: rgb(3, 120, 199); 
+        color: rgb(243, 238, 233);
+       
+    }
+
+   
+
+    /* **********header image**@media (min-width: 1574px******* */
+     .header__img {
+        display: block;
+        padding-bottom: 50px;
+        margin: 0 10%;
+
+    } 
+
+   
+
+
+
+    /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #cards__video__aside {
+        margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cards__video {
+        background-color: rgb(200, 218, 99);
+       
+        width: 68%;
+    }
+    #aside__section {
+        width: 30%;
+        border: 1px solid rgb(40, 61, 182);
+        border-radius: 10px 10px 0 0;
+        background-color: rgb(243, 215, 192);
+    }
+    
+    .section__title {
+        margin: 0;
+        font-size: 1.6em;
+        display: block; 
+        background-color: rgb(145, 5, 70);
+        color: aliceblue;
+    }
+   
+     .card__text {  
+        font-size: 1em;   
+    }
+
+    .card__img {
+        padding-bottom: 2%;
+        height: 20em;
+        width: 30em;
+        margin: 0 1%;
+    }
+
+    .link {
+         margin-top: 10px;
+        font-size: 1.1em;
+    }
+
+    .link:hover {
+        color: rgb(9, 52, 172);
+        background-color: rgb(196, 196, 226);
+        transition: 0.4s;
+    }
+
+
+
+
+    /* ********************VIDEO ZONE**@media (min-width: 1574px**************** */
+
+    #video__zone-quote {
+        display: none;
+    }
+    #video__zone {
+    position: absolute;
+    right: 3.4%;
+    top: 5200px;
+    }
+    .video {
+        width: 400px;
+        height: auto;
+    }
+    /* ***************ASIDE****@media (min-width: 1574px**************************** */
+
+    /* *******************INFO ZONE **@media (min-width: 1574px*********** */
+     .info__questions__section {
+        
+        margin: 0 1%;
+        
+    }
+   
+    .aside__block,
+    .aside__article__info,
+    .aside__article__questions {
+        margin: 0;
+
+    }
+    .info__content,
+    .info__title {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .info__text { 
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+
+    .info__title {
+        color: rgb(102, 19, 179);
+        padding: 5px;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    .btn__info {
+        margin-bottom: 15px;
+    }
+    .info__img {   
+        float: none;
+        padding: 10px;
+    }
+   
+    aside hr {
+        padding: 4% 0;
+    } 
+    hr {
+        margin-top: 2%;
+    }
+
+    /* ******************QUESTIONS ZONE*@media (min-width: 1574px**********/
+     .aside__article__questions {
+            padding-top: 1%;
+            
+        }
+        #img__questions {
+            padding: 10px;
+            margin: 10px 0 0 0;
+        }
+        #questions,
+        .questions__title,
+        .questions__content {
+            padding-bottom: 20px;
+        }
+    
+        .questions__title {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+
+         
+        .questions__title {
+            color: rgb(20, 102, 102);
+            padding-top: 3%;
+            font-size: 1.5em;
+        }
+    
+        .questions__text {
+            color: darkslategray;
+            font-size: 1em;
+            
+        }
+        
 }
