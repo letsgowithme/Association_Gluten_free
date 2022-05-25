@@ -1,0 +1,312 @@
+/* font common */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+/* font p */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+@media screen and (min-width: 375px) {
+
+    body,
+    * {
+        
+        box-sizing: border-box;
+        margin: 0 1%;
+        padding: 0;
+        font-family: 'Playfair Display', serif;
+        scroll-behavior: auto;
+        overflow-x: hidden;
+        overflow-y: s;
+
+    }
+    body {
+        background-color: beige;
+    }
+  
+    #page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .logo__title {
+        font-size: 1.5em;
+        color: rgb(17, 10, 119);
+    }
+
+    .logo__title,
+    h1,
+    .nav__bar {
+        padding-bottom: 0.7em;
+    }
+
+    .logo__title,
+    .questions__title {
+        letter-spacing: 2px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .don {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .don__item {
+        font-size: 1.5em;
+        padding: 6px;
+        margin: 10px 3px;
+        text-decoration: none;
+        color: blue;
+        background-color: #ece073;
+        transition: 0.5s;
+        border-radius: 10px;
+
+    }
+
+
+    .don__item:hover {
+        background-color: gray;
+        color: rgb(142, 212, 180);
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: gold;
+        text-shadow: 1px 3p 5p 0.5;
+        
+        transition: 0.7s;
+        text-shadow: 1px -1px 2px rgb(0 68 255);
+    }
+
+    h1:hover {
+
+        color: rgb(133, 117, 26);
+        transition: 0.5s;
+        text-shadow: none;
+    }
+
+    p {
+        font-family: 'Cairo', sans-serif;
+        font-size: 1.3em;
+    }
+
+    h1,
+    ul li a,
+    .section__title,
+    .info__title,
+    .questions__title {
+        text-transform: uppercase;   
+    }
+    
+    .page__header {
+        padding-bottom: 2em;
+    }
+
+   
+    /* ----------------Nav bar-@MEDIA min-width: 375px------------------------------- */
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    ul li {
+        padding: 3%;
+    }
+
+    #nav__main li a,
+    #nav__info__questions li a {
+
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        font-weight: 700;
+
+        color: blue;
+        background-color: #ece073;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+
+    #nav__main a {
+        display: block;
+        font-size: 1.4em;
+    }
+
+
+    #nav__main li a:hover
+    
+     {
+        background-color: rgb(42, 42, 158);
+        color: rgb(243, 238, 233);
+    }
+
+    
+
+    .section__title {
+        background-color: rgb(106, 160, 160);
+        border-radius: 10px;
+        color: aliceblue;
+        padding: 1%;
+        margin-bottom: 2%;
+
+    }
+
+   .info__title {
+       font-size: 1.6em;
+       color: rgb(102, 19, 179);
+    padding: 2% 1%;
+    letter-spacing: 2px;
+    font-weight: bold;
+       margin-bottom: 1%;
+   }
+ 
+   .info__text {
+       margin: 1% 30%;
+   }
+   .info__img {
+    height: 150px;
+    width: 150px;
+} 
+
+#events__img__gluten_free {
+    width: 120px;
+    height: 120px;
+}
+    .link {
+        color: aliceblue;
+        background-color: blue;
+        cursor: pointer;
+        margin: 2% 1%;
+        padding: 5px 8px;
+        border-radius: 10px;
+        display: inline-block;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 1.4em;
+        font-weight: 700;
+        text-align: center;
+        border: 1px solid rgb(10, 80, 80);
+    }
+    .link:hover {
+      color: rgb(18, 71, 117);
+      background-color: rgb(196, 196, 226);
+      transition: 0.4s;
+    }
+    .btn {
+      
+        cursor: pointer;
+        margin: 2% 0 0 0;
+        padding: auto;
+        border-radius: 10px;
+    }      
+    .btn_link_home {
+        background-color: rgb(20, 185, 42);
+        border: 2px solid green;
+       
+    }
+
+    #btn__up {
+
+      position: fixed;
+      bottom: 10px;
+      opacity: 0.5;
+      padding: 9px 4px 0 4px;
+      right: 3%;
+      background-color: rgb(148, 196, 53);
+    }
+
+    #btn__up a {
+      
+      font-size: 2em;
+
+    }
+
+    #btn__up:hover {
+      background-color: rgb(175, 240, 47);
+      opacity: 1;
+      transition: 0.3s;
+      padding: 12px 6px 2px 6px;
+      transition: ease-in;
+      
+    }     
+
+    
+    
+    /************************* FOOTER**-@MEDIA min-width: 375px******************** */
+    #page__footer {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+
+    }
+
+    .adresse {
+        font-size: 1.6em;
+        color: rgb(23, 17, 87);
+        margin: 2% 0;
+    }
+
+    #page__footer p {
+        padding: 0.3em 1em;
+        font-size: 1.3em;
+        color: rgb(17, 10, 119);
+    }
+
+    .icons {
+        padding-top: 4%;
+        display: flex;
+        padding-left: 5%;
+        justify-content: space-between;
+
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 70px;
+
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #c72d2d;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+
+}
