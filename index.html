@@ -42,13 +42,13 @@
             
             <nav class="nav__bar">
                 <ul id="nav__main">
-                    <li class="nav__item"><a href="index.html" id="home">Acceuil</a></li>
+                    <li class="nav__item nav__item__home"><a href="index.html" id="home">Acceuil</a></li>
                     <li class="nav__item"><a href="#about">Qui sommes nous?</a></li>
                     <li class="nav__item"><a href="events.html">Evenements</a></li>
                     <li class="nav__item"><a href="#cuisine">Cuisine</a></li>
                     <li class="nav__item"><a href="#psychologue">Soutien psychologique</a></li>
-                    <li class="nav__item" id="actualité"><a href="#actualité">Actualité</a></li>
-                    <li class="nav__item"><a href="#adresse" id="adresse">Contacts</a></li>
+                    <li class="nav__item" id="actualité"><a href="#actualité_anchor">Actualité</a></li>
+                    <li class="nav__item"><a href="#adresse_anchor" id="adresse">Contacts</a></li>
 
                 </ul>
                 <ul id="nav__info__questions">
@@ -149,7 +149,7 @@
                         <header class="card__header">
                             <h2 class="card__title" id="psychologue">Soutien psychologique</h2>
                         </header>
-                        <img class="card__img" src="media/psychologist.jpg" alt="psychologist">
+                        <img class="card__img" src="media/psychologist.jpg" alt="psychologist" id="psy">
                         <div class="card__content">
                             <p class="card__text">Vous n'allez pas vous sentir seul face à la maladie coeliaque</p>
 
@@ -160,7 +160,7 @@
                     </article>
                     <article class="card">
                         <header class="card__header">
-                            <h2 class="card__title" id="actualité">Actualité</h2>
+                            <h2 class="card__title" id="actualité_anchor">Actualité</h2>
                         </header>
                         <img class="card__img" src="media/hot-air-balloon-1818015_1280.jpg" alt="hot-air-balloon">
                         <div class="card__content">
@@ -231,7 +231,7 @@
             
                         <h3 class="info__title">Régime alimentaire sans gluten</h3>
                         <div class="info__content">
-                        <img src="media/sans-gluten.png" alt="hand_and_money" class="info__img" id="info__img__3">
+                        <img src="media/sans-gluten.png" alt="gluten_free" class="info__img" id="info__img__3">
             
             
                         <p class="info__text">Pour traiter la maladie cœliaque, une alimentation sans gluten reste
@@ -285,17 +285,18 @@
                                 l'année et il est possible de payer le montant en plusieurs fois.</p>
                             </div>
                             <a class="link btn__info" id="last__btn" href="#">Lire la suite...</a>
-            
-                            <button class="btn" id="btn__home"><a href="index.html"><img src="media/arrow.png" alt="arrow"
+            <!-- ------------------------------------------BUTTON HOME--------------------------------------------------- -->
+                            <button class="btn" id="btn__up"><a href="#logo"><img src="media/arrow.png" alt="arrow"
                                         width="50" height="50"></a></button>
                         </article>
                     </div>
                 </div>
+                <!-- -------------------------------------RECETTES ZONE------------------------------------------------------- -->
                 <div id="recettes">
                     <h3 class="recettes__title">Nos recettes sans gluten</h3>
                     <div class="recette">
                         
-                        <a href="#"><img src="media/salad-2939830_1280.jpg" alt="salad" width="400" height="300"></a>
+                        <a href="#"><img src="media/salad-2939830_1280.jpg" alt="salad" width="400" height="300" id="recette__1"></a>
                     </div>
                     <div class="recette">
                         
@@ -317,8 +318,9 @@
         </main>
         <!---------------FOOTER------------------->
         <footer id="page__footer">
-            <address class="adresse" id="adresse">Notre adresse: 18 rue Molière Lyon <br> téléphone: 0712345678
+            <address class="adresse" id="adresse_anchor">Notre adresse: 18 rue Molière Lyon <br> téléphone: 0712345678
             </address>
+            <a href="mailto:gluten-free-asso.net">gluten-free-asso.net</A>
             <div class="icons">
 
                 <a href="http://www.twitter.fr" target="_blank"><i class="fa fa-twitter"></i></a>
