@@ -32,7 +32,7 @@
         text-align: center;
         
     }
-
+/* ***********-HEADER LOGO -*********** */
     .logo__title {
         font-size: 1.5em;
         color: rgb(17, 10, 119);
@@ -55,7 +55,7 @@
         align-items: center;
         padding: 0 1em;
     }
-
+/* *******DON****************** */
     .don {
         display: flex;
         flex-direction: column;
@@ -96,7 +96,7 @@
         transition: 0.5s;
         text-shadow: none;
     }
-
+/* ************************************* */
     p {
         font-family: 'Cairo', sans-serif;
         font-size: 1.3em;
@@ -115,7 +115,7 @@
     }
 
    
-    /* ----------------Nav bar-@MEDIA min-width: 375px------------------------------- */
+    /* ----------------NAV BAR-@MEDIA min-width: 375px------------------------------- */
     ul {
         list-style: none;
         display: flex;
@@ -154,9 +154,9 @@
         background-color: rgb(42, 42, 158);
         color: rgb(243, 238, 233);
     }
-
+/* ***************** */
     
-
+/* --- ******CONCOURS CUISINE-***********-- */
     .section__title {
         background-color: rgb(106, 160, 160);
         border-radius: 10px;
@@ -182,7 +182,7 @@
     height: 150px;
     width: 150px;
 } 
-
+/* **************CONCOURS ANNONCE **************** */
 #events__img__gluten_free {
     width: 120px;
     height: 120px;
@@ -245,7 +245,39 @@
       
     }     
 
+    .event__info {
+        background-color: rgb(116, 128, 16);
+        color: wheat;
+        padding: 8px;
+        font-size: 1.4em;
+    }
     
+    
+    .event__title {
+        font-size: 1.5em;
+        color: rgb(128, 9, 122);
+    }
+   
+    #recette__2,
+    #recette__3 {
+        display: none;
+        visibility: hidden;
+    }
+    .events__annonce__title,
+            .place__title  {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+    
+            .events__annonce__title {
+                font-size: 1.5em;
+                color: rgb(128, 9, 122);
+            }
+    
+    .place__title {
+        padding: 10px;
+        font-size: 1.4em;
+    }
     
     /************************* FOOTER**-@MEDIA min-width: 375px******************** */
     #page__footer {
@@ -307,6 +339,10 @@
     .fa-youtube {
         background: #bb0000;
         color: white;
+    }
+    .video {
+        height: 426px;
+        width: 636px;
     }
 
 }
