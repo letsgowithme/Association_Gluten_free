@@ -32,7 +32,7 @@
         text-align: center;
         
     }
-/* ***********-HEADER LOGO -*********** */
+/* ***********-HEADER LOGO -375px*********** */
     .logo__title {
         font-size: 1.5em;
         color: rgb(17, 10, 119);
@@ -55,7 +55,7 @@
         align-items: center;
         padding: 0 1em;
     }
-/* *******DON****************** */
+/* *******DON*375px***************** */
     .don {
         display: flex;
         flex-direction: column;
@@ -101,8 +101,13 @@
         color: wheat;
         text-transform: uppercase;
         font-size: 1.5em;
+        transition: 0.7s;
     }
-    
+    .event__title:hover {
+        color: wheat;
+        letter-spacing: 2.3px;
+        transition: 0.5s;
+    }
    
 /* ************************************* */
     p {
@@ -163,7 +168,7 @@
     }
 /* ***************** */
     
-/* --- ******CONCOURS CUISINE-***********-- */
+/* --- ******CONCOURS CUISINE-**375px*********-- */
     .section__title {
         background-color: rgb(106, 160, 160);
         border-radius: 10px;
@@ -173,14 +178,14 @@
 
     }
 
-   .info__title {
+    .info__title {
        font-size: 1.6em;
        color: rgb(102, 19, 179);
     padding: 2% 1%;
     letter-spacing: 2px;
     font-weight: bold;
        margin-bottom: 1%;
-   }
+   } 
  
    .info__text {
        margin: 1% 30%;
@@ -189,7 +194,7 @@
     height: 150px;
     width: 150px;
 } 
-/* **************CONCOURS ANNONCE **************** */
+/* **************CONCOURS ANNONCE *375px*************** */
 #events__img__gluten_free {
     width: 120px;
     height: 120px;
@@ -413,50 +418,26 @@
     }
 
     #nav__main li a {
-       
+       color: wheat;
+       font-size: 1.1em;
         border-radius: 10px;
         background: none;
-        background-color: rgb(156, 241, 129);
+        background-color: rgb(137, 150, 20);
     }
 
-    #nav__main li {
-        
-        padding: 3px 0;
-        border-radius: 10px;
-    }
 
     #nav__main li #home {
-        display: none;
-        visibility: hidden;
+        display: block;
+        visibility: visible;
+        margin-top: 5px;
+        padding: 15px 10px;
     }
 
-    #nav__info__questions li {
-        display: flex;
-        justify-content: center;
-     
-
-    }
-
-    #nav__info__questions li a {
-
-        cursor: pointer;
-        transition: 0.5s;
-        text-decoration: none;
-        padding: 5px 20px;
-        margin: 0 30px;
-        border-radius: 10px;
-    }
 
     #nav__main li a:hover {
-        background-color: rgb(74, 168, 45); 
-        color: rgb(243, 238, 233);
+        background-color: rgb(89, 224, 48); 
+        color: rgb(65, 61, 57);
        
-    }
-
-    #nav__main a,
-    #nav__info__questions li a {
-
-        font-size: 1em;
     }
 
     #nav__main {
@@ -464,56 +445,179 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    /* **********header image**@media min-width: 758px******* */
-    .header__img {
-        display: block;
-        padding-bottom: 50px;
-
-    }
-    
-
+   
+  
+    /* *******************INFO ZONE **@media min-width: 758px*********** */
     .section__title {
         padding: 5px 10px;
         font-size: 2em;
     }
 
-    /* *******************INFO ZONE **@media min-width: 758px*********** */
-    
     .aside__block
      {
         margin: 10px;
 
     }
     
-    .info__title {
-        margin-left: 18%;
-        margin-right: 10%; 
-        color: rgb(102, 19, 179);
-        padding: 2% 1%;
-        font-size: 1.7em;
-        letter-spacing: 2px;
-    }
-    
+  
     .info__text {
        
      font-size: 1.2em;
     }
+   
 
-    .info__img {
-        height: 140px;
-        width: 140px;
+}
 
+/* *******************@MEDIA 1042PX************************************ */
+
+/* *********************@MEDIA 1042PX********************************** */
+
+/* *********************@MEDIA 1042PX********************************* */
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: rgb(246, 248, 144);
+        /* width: 90%; */
+        display: flex;
+        justify-content: center;
+        
     }
-    /****************page ENENTS*@media min-width: 758px************** */
-    .video {
-        height: 426px;
-        width: 636px;
+   #page {
+       max-width: 1024px;
+   }
+   .event__title {
+    /* max-width: 1170px; */
+    font-size: 2em;
+   }
+    .don__item {
+       
+        color: rgb(7, 7, 228);
+        background-color: #f3ba8b;
+    }
+    .don__item:nth-child(3) {
+        padding: 5px 35px 5px 40px;
+    }    
+    .don__item:nth-child(2) {
+        padding: 5px 14px;
+    }    
+
+
+    h1 {
+       border: none;
+        text-shadow: rgb(0 68 255) -5px 2px 4px;
+        background-color: rgb(145, 5, 70);
+        padding: 9px;
+    }
+
+
+    p {
+        font-family: 'Merriweather', serif;
+        font-size: 2em;
+    }
+
+    .logo__title {
+        font-weight: 700;
+        padding-left: 20px;
+       
+    }
+
+
+    /* ----------------Nav bar--@MEDIA 1042PX----------------------------- */
+    #nav__main {
+        display: flex;
+        width: 100%;
+        background-color: rgb(157, 168, 58);
+      }
+    
+    #nav__main li a
+     {
+        background: none;
+        margin: 0;
+        font-size: 1.3em;
+        color: rgb(245, 245, 245);
+    }
+
+    #nav__main li a:hover {
+        background-color: rgb(177, 22, 68); 
+        color: rgb(243, 238, 233);
+        letter-spacing: 0.1em;
+       
+    }
+    /* *****************CARDS****************** */
+    .cuisine__photos__img {
+        padding: 0 10px;
+        height: 300px;
+        width: 400px;
+    }
+    .cuisine__photos {
+        display: flex;
+    }
+  
+    #recette__2,
+    #recette__3 {
+        display: block;
+        visibility: visible;
+    }
+    .event__info {
+        font-size: 1em;
+        color: wheat;
+        padding: 8px;
+        
+    }
+    .info__img {
+        margin: 20px 10px;
+    }
+    .aside__events {
+        width: 100%;
+        display: flex;
+      
+    }
+  
+    .events__3__article {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 3em;
+        
+    }
+  
+    .info__title {
+        font-size: 1.3em;
+        height: 140px;
+       
+    }
+   #events__img__gluten_free {
+       margin-bottom: 30px;
+       width: 140px;
+       height: 140px;
+   }
+    .info__text {
+        margin: 0;
+        padding-bottom: 2em;
+    }
+    .events__annonce__title {
+        font-size: 1.5em;
+        color: rgb(128, 9, 122);
+    }
+    .place__title {
+        padding: 10px;
+        font-size: 2em;
     }
    
-    .event__info {
-        background-color: rgb(116, 128, 16);
-        font-size: 1.1em;
+    .aside__article__info {
+        padding: 0;
+        margin: 0 20px;
+       
+    }
+  
+ 
+    
+    .events__annonce__title {
+        font-size: 2em;
+        padding-top: 30px;
+    }
+    .btn_link_home {
+        margin: 2em;
     }
     
- 
+   
 }
