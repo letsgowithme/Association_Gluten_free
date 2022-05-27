@@ -96,6 +96,14 @@
         transition: 0.5s;
         text-shadow: none;
     }
+    .event__title {
+        background-color: #bb3e3e;
+        color: wheat;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    
+   
 /* ************************************* */
     p {
         font-family: 'Cairo', sans-serif;
@@ -128,8 +136,7 @@
         padding: 3%;
     }
 
-    #nav__main li a,
-    #nav__info__questions li a {
+    #nav__main li a {
 
         cursor: pointer;
         transition: 0.5s;
@@ -253,11 +260,7 @@
     }
     
     
-    .event__title {
-        font-size: 1.5em;
-        color: rgb(128, 9, 122);
-    }
-   
+    
     #recette__2,
     #recette__3 {
         display: none;
@@ -345,4 +348,172 @@
         width: 636px;
     }
 
+}
+/* ******************VERSION TABLETTE*@media min-width: 758px ************* */
+/* ******************version tablette**@media min-width: 758px************* */
+/* ******************version tablette**@media min-width: 758px************* */
+@media screen and (min-width: 758px) {
+
+    body,
+    * {
+
+        margin: 2px;
+
+    }
+
+    body {
+        background-color: rgb(238, 238, 173);
+        
+    }
+
+
+    .logo__content {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__title {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+   
+
+    h1 {
+       
+        text-shadow: 4px 1px 1px rgb(0 68 255);
+        font-size: 2.5em;
+        background-color: #bb3e3e;
+    }
+    
+
+    h1:hover {
+
+        color: rgb(245, 239, 207);
+       letter-spacing:  3px;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    
+
+
+    /* ----------------Nav bar-@media min-width: 758px------------------------------- */
+    ul {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    ul li {
+        padding: 1%;
+    }
+
+    #nav__main li a {
+       
+        border-radius: 10px;
+        background: none;
+        background-color: rgb(156, 241, 129);
+    }
+
+    #nav__main li {
+        
+        padding: 3px 0;
+        border-radius: 10px;
+    }
+
+    #nav__main li #home {
+        display: none;
+        visibility: hidden;
+    }
+
+    #nav__info__questions li {
+        display: flex;
+        justify-content: center;
+     
+
+    }
+
+    #nav__info__questions li a {
+
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        padding: 5px 20px;
+        margin: 0 30px;
+        border-radius: 10px;
+    }
+
+    #nav__main li a:hover {
+        background-color: rgb(74, 168, 45); 
+        color: rgb(243, 238, 233);
+       
+    }
+
+    #nav__main a,
+    #nav__info__questions li a {
+
+        font-size: 1em;
+    }
+
+    #nav__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* **********header image**@media min-width: 758px******* */
+    .header__img {
+        display: block;
+        padding-bottom: 50px;
+
+    }
+    
+
+    .section__title {
+        padding: 5px 10px;
+        font-size: 2em;
+    }
+
+    /* *******************INFO ZONE **@media min-width: 758px*********** */
+    
+    .aside__block
+     {
+        margin: 10px;
+
+    }
+    
+    .info__title {
+        margin-left: 18%;
+        margin-right: 10%; 
+        color: rgb(102, 19, 179);
+        padding: 2% 1%;
+        font-size: 1.7em;
+        letter-spacing: 2px;
+    }
+    
+    .info__text {
+       
+     font-size: 1.2em;
+    }
+
+    .info__img {
+        height: 140px;
+        width: 140px;
+
+    }
+    /****************page ENENTS*@media min-width: 758px************** */
+    .video {
+        height: 426px;
+        width: 636px;
+    }
+   
+    .event__info {
+        background-color: rgb(116, 128, 16);
+        font-size: 1.1em;
+    }
+    
+ 
 }
