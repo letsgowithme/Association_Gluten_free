@@ -618,6 +618,96 @@
     .btn_link_home {
         margin: 2em;
     }
+    .hr__events__last {
+        height: 10px;
+        width: 100%;
+        color: gray;
+    }
     
    
 }
+
+/* ********************@media (min-width: 1574px)****************** */
+/* ********************@media (min-width: 1574px)******************* */
+/* ********************@media (min-width: 1574px)********************* */
+
+@media screen and (min-width: 1574px) {
+    body {
+        background-color: rgb(206, 236, 171);
+      
+        
+    }
+    #page {
+        max-width: 1500px;
+      
+    }
+    #logo {
+        margin-left: 0;
+        padding-left: 0;
+    }
+        .logo__title {
+            font-size: 1.6em;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+    
+        .don__item {
+            font-size: 1.1em;
+            padding: 6px 10px;
+          
+        }
+        .don__item:nth-child(3) {
+            padding: 5px 35px;
+        }    
+    
+        h1 { 
+            font-size: 2.7em;
+        }
+    
+        h1:hover {
+            letter-spacing: 5px;
+            color: rgb(250, 240, 106);  
+            text-shadow: rgb(0 68 255) -5px 2px 6px;
+        }
+    
+    
+        /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
+    
+        
+        .nav__bar li {
+        padding-right: 10px;
+        
+        }
+        #nav__main li {
+            
+            font-size: 1em;    
+        }
+    
+        /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
+      
+    
+        .cuisine__photos__img {
+            padding-bottom: 2%;
+            height: 20em;
+            width: 30em;
+            margin: 0 1%;
+        }
+    
+    
+        
+            /* *********************aside__events************* */
+         
+         
+            .btn_link_home {
+                margin-top: 30px;
+                padding: 10px;
+                text-transform: uppercase;
+                margin-bottom: 1.3em;
+            }
+            .events__nav__bar li  {
+                font-size: 1.7em;
+                
+            }
+            
+            
+
