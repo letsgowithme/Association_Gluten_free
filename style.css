@@ -11,7 +11,7 @@
 
     body,
     * {
-        
+
         box-sizing: border-box;
         margin: 0 1%;
         padding: 0;
@@ -19,29 +19,32 @@
         scroll-behavior: auto;
         overflow-x: hidden;
         overflow-y: s;
-        
-       
+
+
     }
+
     body {
         background-color: beige;
     }
-    .header__img  {
+
+    .header__img {
         display: none;
     }
+
     #page {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        
+
     }
 
     .logo__title {
         font-size: 2em;
         color: rgb(17, 10, 119);
         font-family: 'Libre Baskerville', serif;
-        
+
     }
 
     .logo__title,
@@ -114,9 +117,9 @@
     .info__title,
     .questions__title {
         text-transform: uppercase;
-        
+
     }
-    
+
     .page__header {
         padding-bottom: 2em;
     }
@@ -156,8 +159,7 @@
 
 
     #nav__main li a:hover,
-    #nav__info__questions li a:hover
-     {
+    #nav__info__questions li a:hover {
         background-color: rgb(42, 42, 158);
         color: rgb(243, 238, 233);
     }
@@ -178,14 +180,14 @@
         letter-spacing: 1px;
         font-size: 1.5em;
     }
-     
+
 
     /******************* CARD SECTIONS *-@MEDIA min-width: 375px************************/
     .section__title,
     .card__section,
     .aside__article__questions {
         margin-bottom: 1.5%;
-        
+
     }
 
     .section__title {
@@ -201,27 +203,38 @@
         padding-top: 1.4em;
         padding-bottom: 2%;
         margin: 0 2.5%;
+        width: 100%;
 
+    }
+
+    .card__content {
+        width: 100%;
+        font-size: 1.5em;
     }
 
     .card__text {
         font-family: 'Roboto Slab', serif;
-        font-size: 1.2em;
-        font-weight: 600;
+
+        font-weight: 500;
         padding-bottom: 2%;
-        margin: 2%;
+        margin: 0 16%;
+
+        color: rgb(122, 112, 112);
 
     }
+
 
     .card__img {
         padding-bottom: 2%;
         height: 400px;
-         width: 636px;
+        width: 636px;
     }
+
     #psy {
         height: 360px;
-         width: 636px;
+        width: 636px;
     }
+
     .link {
         color: aliceblue;
         background-color: blue;
@@ -237,45 +250,48 @@
         text-align: center;
         border: 1px solid rgb(10, 80, 80);
     }
+
     .link:hover {
-      color: rgb(18, 71, 117);
-      background-color: rgb(196, 196, 226);
-      transition: 0.4s;
+        color: rgb(18, 71, 117);
+        background-color: rgb(196, 196, 226);
+        transition: 0.4s;
     }
+
     .btn {
-      
+
         cursor: pointer;
         margin: 2% 0 0 0;
         padding: auto;
         border-radius: 10px;
-    }      
-    
+    }
+
 
     #btn__up {
 
-      position: fixed;
-      bottom: 10px;
-      right: -100px;
-      opacity: 0.5;
-      padding: 9px 4px 0 4px;
-      right: 3%;
-      background-color: rgb(148, 196, 53);
+        position: fixed;
+        bottom: 10px;
+        right: -100px;
+        opacity: 0.6;
+        padding: 9px 4px 0 4px;
+        right: 3%;
+        background-color: rgb(148, 196, 53);
     }
 
     #btn__up a {
-      
-      font-size: 2em;
+
+        font-size: 2em;
 
     }
 
     #btn__up:hover {
-      background-color: rgb(175, 240, 47);
-      opacity: 1;
-      transition: 0.3s;
-      padding: 12px 6px 2px 6px;
-      transition: ease-in;
-      
-    }     
+        background-color: rgb(175, 240, 47);
+        opacity: 1;
+        transition: 0.4s;
+        padding: 12px 6px 2px 6px;
+     
+
+    }
+
     /* ********************VIDEO ZONE**-@MEDIA min-width: 375px**************** */
     #video__zone {
         margin-top: 1.5em;
@@ -288,7 +304,7 @@
         border-radius: 10px;
         color: rgb(22, 22, 236);
         padding: 0.5em 2em;
-        width: auto;
+        width: 100%;
     }
 
     /* ***************ASIDE*-@MEDIA min-width: 375px******************************* */
@@ -314,19 +330,20 @@
         font-size: 1.4em;
     }
 
-     .info__img {
+    .info__img {
         height: 150px;
         width: 150px;
-    } 
+    }
 
     aside hr {
         padding: 2% 0;
     }
+
     #info__img__3 {
         width: 120px;
         height: inherit;
     }
-    
+
     /* ******************QUESTIONS ZONE**-@MEDIA min-width: 375px*********/
     .aside__article__questions {
         padding-top: 9%;
@@ -336,15 +353,17 @@
     .questions__text {
         color: darkslategray;
     }
-    
 
-#last__btn {
-    margin-bottom: 2%;
-}
-#recettes {
-    display: none;
-    visibility: hidden;
-}
+
+    #last__btn {
+        margin-bottom: 2%;
+    }
+
+    #recettes {
+        display: none;
+        visibility: hidden;
+    }
+
     /************************* FOOTER**-@MEDIA min-width: 375px******************** */
     #page__footer {
         margin-top: 8%;
@@ -359,9 +378,11 @@
         color: rgb(23, 17, 87);
         margin: 4% 1%;
     }
+
     #our_mail {
         font-size: 1.3em;
     }
+
     #page__footer p {
         padding: 0.3em 1em;
         font-size: 1em;
@@ -408,56 +429,65 @@
         background: #bb0000;
         color: white;
     }
-/****************page ENENTS**-@MEDIA min-width: 375px************* */
-.video {
-    height: 426px;
-    width: 636px;
-}
-.event__info {
-    background-color: rgb(116, 128, 16);
-}
-.events__nav__bar li  {
-    font-size: 1.em;
-    
-}
-events__img__gluten_free {
-    width: 115px;
-    height: 115px;
-                               
-}
-.event__title {
-    font-size: 1.6em;
-   
-}
-events__annonce__title {
-    font-size: 1.5em;
-    color: rgb(128, 9, 122);
-}
-.event__info {
-    color: wheat;
-    padding: 8px;
-    font-size: 1.4em;
-}
-#recette__2,
-#recette__3 {
-    display: none;
-    visibility: hidden;
-}
-.events__annonce__title,
-        .place__title  {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
 
-        .events__annonce__title {
-            font-size: 1.5em;
-            color: rgb(128, 9, 122);
-        }
+    /****************page ENENTS**-@MEDIA min-width: 375px************* */
+    .video {
+        height: 426px;
+        width: 636px;
+    }
 
-.place__title {
-    padding: 10px;
-    font-size: 1.4em;
-}
+    .event__info {
+        background-color: rgb(116, 128, 16);
+    }
+
+    .events__nav__bar li {
+        font-size: 1.em;
+
+    }
+
+    events__img__gluten_free {
+        width: 115px;
+        height: 115px;
+
+    }
+
+    .event__title {
+        font-size: 1.6em;
+
+    }
+
+    events__annonce__title {
+        font-size: 1.5em;
+        color: rgb(128, 9, 122);
+    }
+
+    .event__info {
+        color: wheat;
+        padding: 8px;
+        font-size: 1.4em;
+    }
+
+    #recette__2,
+    #recette__3 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .events__annonce__title,
+    .place__title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .events__annonce__title {
+        font-size: 1.5em;
+        color: rgb(128, 9, 122);
+    }
+
+    .place__title {
+        padding: 10px;
+        font-size: 1.4em;
+    }
 }
 
 
@@ -475,14 +505,9 @@ events__annonce__title {
 
     body {
         background-color: rgb(238, 238, 173);
-        
-    }
-
-    #page {
-        
-        /* width: 96%; */
 
     }
+
 
     .logo__content {
         display: flex;
@@ -545,7 +570,7 @@ events__annonce__title {
         color: rgb(245, 239, 207);
         transition: 0.5s;
         text-shadow: none;
-       letter-spacing:  3px;
+        letter-spacing: 3px;
     }
 
     p {
@@ -584,7 +609,7 @@ events__annonce__title {
     }
 
     #nav__main li {
-        
+
         padding: 3px 0;
         border-radius: 10px;
     }
@@ -597,7 +622,7 @@ events__annonce__title {
     #nav__info__questions li {
         display: flex;
         justify-content: center;
-     
+
 
     }
 
@@ -612,9 +637,9 @@ events__annonce__title {
     }
 
     #nav__main li a:hover {
-        background-color: rgb(74, 168, 45); 
+        background-color: rgb(74, 168, 45);
         color: rgb(243, 238, 233);
-       
+
     }
 
     #nav__main a,
@@ -666,14 +691,14 @@ events__annonce__title {
         margin: 0 2.5%;
 
     }
-    
+
     .card__text {
         font-family: 'Poppins', sans-serif;
         font-size: 1.2em;
-       margin: 0;
-       padding: 0 0 10px 0;
-      
-        
+        margin: 0;
+        padding: 0 0 10px 0;
+
+
 
     }
 
@@ -685,7 +710,7 @@ events__annonce__title {
     }
 
     .link {
-         margin-top: 10px;
+        margin-top: 10px;
         font-size: 1.2em;
 
 
@@ -721,13 +746,15 @@ events__annonce__title {
         margin: 10px;
 
     }
+
     .info__content,
     .info__title {
         margin-left: 18%;
         margin-right: 10%;
     }
+
     .info__text {
-       
+
         font-size: 1.2em;
 
 
@@ -749,56 +776,61 @@ events__annonce__title {
         padding-left: 6px;
         padding-right: 4px;
     }
+
     #info__img__3 {
         height: 120px;
         width: 120px;
     }
+
     aside hr {
         padding: 2% 0;
     }
-    
+
     /* ******************QUESTIONS ZONE*@media min-width: 758px*********/
     .aside__article__questions {
-            padding-top: 1%;
-            
-        }
-        .questions__content {
-            margin-left: 20%;
+        padding-top: 1%;
+
+    }
+
+    .questions__content {
+        margin-left: 20%;
         margin-right: 20%;
-        }
-        .questions__title {
-            color: rgb(20, 102, 102);
-            padding-top: 3%;
-            font-size: 1.5em;
-            padding-bottom: 40px;
-        }
-    
-        .questions__text {
-            color: darkslategray;
-            font-size: 1.4em;
-            
-        }
-        
-    
+    }
+
+    .questions__title {
+        color: rgb(20, 102, 102);
+        padding-top: 3%;
+        font-size: 1.5em;
+        padding-bottom: 40px;
+    }
+
+    .questions__text {
+        color: darkslategray;
+        font-size: 1.4em;
+
+    }
+
+
     #last__btn {
         margin-bottom: 2%;
-    } 
+    }
+
     /****************page ENENTS*@media min-width: 758px************** */
     .video {
         height: 426px;
         width: 636px;
     }
-    
+
     .event__info {
         background-color: rgb(116, 128, 16);
     }
-    
-     .aside__article__info {
+
+    .aside__article__info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }    
+    }
 }
 
 
@@ -813,29 +845,27 @@ events__annonce__title {
 @media screen and (min-width: 1024px) {
     body {
         background-color: rgb(246, 248, 144);
-        
-    }
-   
-    .header__img {
-        display: block;
 
     }
-   
+
+
     .don__item {
-       
+
         color: rgb(7, 7, 228);
         background-color: #f3ba8b;
     }
+
     .don__item:nth-child(3) {
         padding: 5px 35px 5px 20px;
-    }    
+    }
+
     .don__item:nth-child(2) {
         padding: 5px 14px;
-    }    
+    }
 
 
     h1 {
-       border: none;
+        border: none;
         text-shadow: rgb(0 68 255) -5px 2px 4px;
         background-color: rgb(145, 5, 70);
         padding: 9px;
@@ -850,7 +880,7 @@ events__annonce__title {
     .logo__title {
         font-weight: 700;
         padding-left: 20px;
-       
+
     }
 
 
@@ -858,292 +888,245 @@ events__annonce__title {
     .nav__bar {
         display: flex;
         margin: 2% 3%;
-        /* margin-left: 3%; */
-        
-    } 
-    .nav__item__home
-    {
-        display: none;
-       
+
+
     }
-   
-   #wrap_item5,
-   #wrap_item2
-    {
-       width: 20%;
-   }
-    /* #nav__main {
-        display: flex;
-        justify-content: space-between;
-    } */
+
+    .nav__item__home {
+        display: none;
+
+    }
+
+    #wrap_item5,
+    #wrap_item2 {
+        width: 20%;
+    }
+
     #nav__main li a,
     #nav__info__questions li a {
         background: none;
         padding: 5px 7px;
-        font-size: 15px;
+        font-size: 20px;
         margin: 3px;
-        /* background-color: rgb(240, 131, 131); */
-       
+
+
     }
-   
+
     #nav__main .nav__item,
-    #nav__info__questions  .nav__item  {
-         padding: 0;
+    #nav__info__questions .nav__item {
+        padding: 0;
         margin: 0;
     }
 
-    
+
 
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
-        background-color: rgb(3, 120, 199); 
+        background-color: rgb(3, 120, 199);
         color: rgb(243, 238, 233);
-       
+
     }
 
-   
+
 
     /* **********header image**@MEDIA 1024px******* */
-     .header__img {
+    .header__img {
         display: block;
         padding-bottom: 50px;
-        margin: 0 10%;
+        margin: 0 5%;
 
-    } 
-
-   
-
-
-
+    }
     /******************* CARD SECTIONS **@MEDIA 1024px***********************/
+
+
     #main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+       
     }
-    
+
     #cards__video__aside {
-        margin: 0 10%;
+        margin: 0 5%;
         display: flex;
         justify-content: space-between;
+        
     }
-    .cards__video {
-        background-color: rgb(240, 166, 132);
-       
-        width: 68%;
-    }
+
+    .cards__video,
     #aside__section {
-        width: 30%;
+        background-color: rgb(240, 166, 132);
         border: 1px solid rgb(40, 61, 182);
         border-radius: 10px 10px 0 0;
-        background-color: rgb(243, 188, 156);
+        
     }
-    
+
+    .cards__video {
+
+        margin: 0;
+        width: 60%;
+    }
+
+    #aside__section {
+        width: 36%;
+        background-color: rgb(243, 188, 156);
+
+    }
+
     .section__title {
         margin: 0;
-        font-size: 1.6em;
-        display: block; 
+        font-size: 1.4em;
+        display: block;
         background-color: rgb(145, 5, 70);
         color: aliceblue;
     }
+
     .card__img {
-      
+
         height: 400px;
         width: 570px;
     }
-     .card__text,
-     p {  
-        font-size: 1em;   
+
+    .card__text,
+    p {
+        font-size: 1em;
         font-weight: bold;
     }
 
-    
- 
+
+
 
     /* ********************VIDEO ZONE**@MEDIA 1024px****************** */
     #video__zone-quote {
         font-size: 1.2em;
         background-color: rgb(241, 232, 145);
         display: inline-block;
+       
     }
-
+   
     /* *****************ASIDE****@MEDIA 1024px***************** */
 
     /* **************INFO ZONE @MEDIA 1024px********* */
-      .info__questions__section {
-        
+    .info__questions__section {
+
         margin: 0 1%;
-        
+
     }
+
     .aside__block,
     .aside__article__info,
     .question__block {
         padding: 0 10px;
 
     }
+
     .aside__block,
     .aside__article__info,
     .aside__article__questions {
         margin: 0;
 
     }
+
     .info__content,
     .info__title {
         margin: 15px 5px 0 5px;
         padding-bottom: 10px;
+        
     }
-    
-    .info__text { 
+
+    .info__text {
         font-size: 1em;
         padding-bottom: 15px;
     }
 
     .info__title {
-        padding-top: 40px;
-        height: 80px;
+        padding-top: 30px;
         color: rgb(102, 19, 179);
-        padding: 5px;
-        font-size: 1.2em;
+        font-size: 1em;
         letter-spacing: 1px;
     }
+
     .btn__info {
-        margin-bottom: 15px;
+        margin-bottom: 2.5em;
     }
-    .info__img {   
+
+    .info__img {
         float: none;
         padding: 5px 0;
+        margin-top: 2px;
     }
-   
+
     aside hr {
         padding: 4% 0;
-    } 
+    }
+
     hr {
         margin-top: 2%;
-    } 
+    }
 
     /* ******************QUESTIONS ZONE*@MEDIA 1024px**********/
-      .aside__article__questions {
-            padding-top: 1%;
-            
-        }
-        #img__questions {
-            padding: 10px;
-            margin: 10px 0 0 0;
-        }
-        #questions,
-        .questions__title,
-        .questions__content {
-            padding-bottom: 20px;
-        }
-    
-        .questions__title {
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
+    .aside__article__questions {
+        padding-top: 1%;
 
+    }
 
-         
-        .questions__title {
-            color: rgb(20, 102, 102);
-            padding-top: 3%;
-            font-size: 1.5em;
-        }
-    
-        .questions__text {
-            color: darkslategray;
-            font-size: 1em;
-            
-        }
-        #recettes {
-            display: block;
-            visibility: visible;
-        }
-        .recettes__title {
-            margin-top: 30px;
-            margin-bottom: 40px;
-            background-color: rgb(145, 5, 70);
-            font-size: 1.4em;
-            color: aliceblue;
-            text-transform: uppercase;
-            padding: 5px;
-        }
-        .recette {
-            padding: 20px 0;
+    #img__questions {
+        padding: 10px;
+        margin: 10px 0 0 0;
+    }
 
-        }
-        .recette a {
-            cursor: pointer;
-        } 
-        /* *********************aside__events*@MEDIA 1024px************ */
-         .aside__events {
-            width: 100%;
-            display: flex;
-          
-        }
-        .event__title {
-            font-size: 1.8em;
-           
-        }
-        .events__3__article {
-            display: flex;
-        }
-        .aside__article__info {
-            width: 100%;
-        }
-        .events__annonce__title,
-        .place__title  {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+    #questions,
+    .questions__title,
+    .questions__content {
+        padding-bottom: 20px;
+    }
 
-        .events__annonce__title {
-            font-size: 1.5em;
-            color: rgb(128, 9, 122);
-        }
-        .place__title {
-            padding: 10px;
-        }
-        .event__info {
-            color: wheat;
-            padding: 8px;
-            font-size: 1.4em;
-        }
-        .btn_link_home {
-            font-size: 1em;
-            font-weight: bold;
-            position: absolute;
-            right: 10px;
-            bottom: 800px;
-            margin-top: 30px;
-            padding: 10px;
-            text-transform: uppercase;
-            background: rgb(61, 161, 41);
-        }
-        .events__nav__bar {
-            display: flex;
-            justify-content: center;
-        } 
-        .events__nav__bar li  {
-            font-size: 1.6em;
-            
-        }
-        .events__arrow {
-            padding: 5px;
-            color: blue;
-            
-        }
-        .cuisine__photos {
-            display: flex;
-        }
-        .cuisine__photos__img {
-            padding: 0 10px;
-            width: 500px;
-            height: 350px;
-        }
-}
+    .questions__title {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
 
 
 
+    .questions__title {
+        color: rgb(11, 8, 190);
+        padding-top: 3%;
+        font-size: 1.5em;
+    }
+
+    .questions__text {
+        color: darkslategray;
+        font-size: 1em;
+
+    }
+
+    #recettes__section {
+        display: block;
+        visibility: visible;
+        margin-top: 50px;
+    }
+
+    .recettes__title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background-color: rgb(145, 5, 70);
+        font-size: 1.4em;
+        color: aliceblue;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+
+    .recette {
+        padding: 20px 0;
+
+    }
+
+    .recette a {
+        cursor: pointer;
+    }
+
+   
 
 
 /* ********************@media (min-width: 1574px)****************** */
@@ -1153,14 +1136,15 @@ events__annonce__title {
 @media screen and (min-width: 1574px) {
     body {
         background-color: rgb(206, 236, 171);
-        
+
     }
-  
-   
-#logo {
-    margin-left: 0;
-    padding-left: 0;
-}
+
+
+    #logo {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     .logo__title {
         font-size: 1.6em;
         padding-left: 10px;
@@ -1170,44 +1154,46 @@ events__annonce__title {
     .don__item {
         font-size: 1.1em;
         padding: 6px 10px;
-      
+
     }
+
     .don__item:nth-child(3) {
         padding: 5px 35px;
-    }    
+    }
 
-    h1 { 
+    h1 {
         font-size: 2.7em;
     }
 
     h1:hover {
         letter-spacing: 4px;
-        color: rgb(250, 240, 106);  
+        color: rgb(250, 240, 106);
         text-shadow: rgb(0 68 255) -5px 2px 6px;
     }
 
 
     /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
 
-    
+
     .nav__bar li {
-    padding-right: 10px;
-    
+        padding-right: 10px;
+
     }
+
     #nav__main .nav__item a,
-    #nav__info__questions .nav__item a  {
-        
-        font-size: 1.2em; 
-        font-weight: 500;   
+    #nav__info__questions .nav__item a {
+
+        font-size: 1.2em;
+        font-weight: 500;
     }
-  
-     #wrap_item5,
-    #wrap_item2
-     {
+
+    #wrap_item5,
+    #wrap_item2 {
         width: 20%;
-    } 
+    }
+
     /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
-  
+
 
     .card__img {
         padding-bottom: 2%;
@@ -1215,9 +1201,12 @@ events__annonce__title {
         width: 30em;
         margin: 0 1%;
     }
+    .card__title {
+        color: #9e0e09;
+    }
 
     .link {
-         margin-top: 10px;
+        margin-top: 10px;
         font-size: 1.1em;
     }
 
@@ -1232,33 +1221,34 @@ events__annonce__title {
     /* ***************ASIDE****@media1574px**************************** */
 
     /* *******************INFO ZONE **@media (min-width: 1574px*********** */
-  
-   
-   
+
+
+
     .info__content,
     .info__title {
         margin-left: 5px;
         margin-right: 5px;
         padding-bottom: 10px;
     }
-   
-    
-    .info__img {   
+
+
+    .info__img {
         padding: 10px;
     }
-   
-    
-        /* *********************aside__events************* */
-     
-     
-        .btn_link_home {
-            margin-top: 30px;
-            padding: 15px;
-            text-transform: uppercase;
-        }
-        .events__nav__bar li  {
-            font-size: 1.7em;
-            
-        }
-        
-}     
+
+
+    /* *********************aside__events************* */
+
+
+    .btn_link_home {
+        margin-top: 30px;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+
+    .events__nav__bar li {
+        font-size: 1.7em;
+
+    }
+  
+}
