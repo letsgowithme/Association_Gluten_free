@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
 @media screen and (min-width: 375px) {
 
@@ -18,7 +19,8 @@
         scroll-behavior: auto;
         overflow-x: hidden;
         overflow-y: s;
-
+        
+       
     }
     body {
         background-color: beige;
@@ -38,6 +40,8 @@
     .logo__title {
         font-size: 2em;
         color: rgb(17, 10, 119);
+        font-family: 'Libre Baskerville', serif;
+        
     }
 
     .logo__title,
@@ -117,10 +121,6 @@
         padding-bottom: 2em;
     }
 
-    #logo__title,
-    #header__quote {
-        font-weight: 600;
-    }
 
     /* ----------------Nav bar-@MEDIA min-width: 375px------------------------------- */
     ul {
@@ -306,10 +306,12 @@
 
     }
 
-    .info__title {
+    .info__title,
+    .questions__title {
         color: rgb(102, 19, 179);
-        padding: 2% 1%;
+        padding: 7% 1%;
         letter-spacing: 2px;
+        font-size: 1.4em;
     }
 
      .info__img {
@@ -330,10 +332,6 @@
         padding-top: 9%;
     }
 
-    .questions__title {
-        color: rgb(20, 102, 102);
-        padding-top: 3%;
-    }
 
     .questions__text {
         color: darkslategray;
@@ -349,7 +347,7 @@
 }
     /************************* FOOTER**-@MEDIA min-width: 375px******************** */
     #page__footer {
-        margin-top: 2%;
+        margin-top: 8%;
         display: flex;
         flex-direction: column;
         margin-bottom: 2%;
@@ -359,8 +357,11 @@
     .adresse {
         font-size: 1.6em;
         color: rgb(23, 17, 87);
+        margin: 4% 1%;
     }
-
+    #our_mail {
+        font-size: 1.3em;
+    }
     #page__footer p {
         padding: 0.3em 1em;
         font-size: 1em;
@@ -680,6 +681,7 @@ events__annonce__title {
         padding-bottom: 2%;
         height: 450px;
         width: 636px;
+        margin: 3% 1%;
     }
 
     .link {
@@ -734,8 +736,9 @@ events__annonce__title {
     .info__title {
         color: rgb(102, 19, 179);
         padding: 2% 1%;
-        font-size: 1.7em;
+        font-size: 1.6em;
         letter-spacing: 2px;
+        font-family: 'Libre Baskerville', serif;
     }
 
     .info__img {
@@ -801,11 +804,11 @@ events__annonce__title {
 
 
 
-/* *******************@MEDIA 1042PX************************************ */
+/* *******************@MEDIA 1024px************************************ */
 
-/* *********************@MEDIA 1042PX********************************** */
+/* *********************@MEDIA 1024px********************************** */
 
-/* *********************@MEDIA 1042PX********************************* */
+/* *********************@MEDIA 1024px********************************* */
 
 @media screen and (min-width: 1024px) {
     body {
@@ -824,7 +827,7 @@ events__annonce__title {
         background-color: #f3ba8b;
     }
     .don__item:nth-child(3) {
-        padding: 5px 35px 5px 40px;
+        padding: 5px 35px 5px 20px;
     }    
     .don__item:nth-child(2) {
         padding: 5px 14px;
@@ -851,40 +854,45 @@ events__annonce__title {
     }
 
 
-    /* ----------------Nav bar--@MEDIA 1042PX----------------------------- */
+    /* ----------------Nav bar--@MEDIA 1024px----------------------------- */
     .nav__bar {
         display: flex;
-        width: 100%;
-        background-color: #f3ba8b;
-        /* padding: 0.04%; */
-      
+        margin: 2% 3%;
+        /* margin-left: 3%; */
+        
     } 
-    .nav__item__home {
+    .nav__item__home
+    {
         display: none;
+       
     }
-    
-    .nav__bar li {
-    padding: 2px;
-    margin: 2px;
-    
-    }
-    
+   
+   #wrap_item5,
+   #wrap_item2
+    {
+       width: 20%;
+   }
+    /* #nav__main {
+        display: flex;
+        justify-content: space-between;
+    } */
     #nav__main li a,
     #nav__info__questions li a {
         background: none;
-        margin: 0;
-        font-size: 0.9em;
+        padding: 5px 7px;
+        font-size: 15px;
+        margin: 3px;
+        /* background-color: rgb(240, 131, 131); */
        
     }
-
-
-    #nav__info__questions li  {
-        padding: 4px 0;
-        display: flex;
-        justify-content: flex-start;
    
-       
+    #nav__main .nav__item,
+    #nav__info__questions  .nav__item  {
+         padding: 0;
+        margin: 0;
     }
+
+    
 
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
@@ -895,7 +903,7 @@ events__annonce__title {
 
    
 
-    /* **********header image**@MEDIA 1042PXx******* */
+    /* **********header image**@MEDIA 1024px******* */
      .header__img {
         display: block;
         padding-bottom: 50px;
@@ -907,7 +915,7 @@ events__annonce__title {
 
 
 
-    /******************* CARD SECTIONS **@MEDIA 1042PXx***********************/
+    /******************* CARD SECTIONS **@MEDIA 1024px***********************/
     #main {
         display: flex;
         flex-direction: column;
@@ -952,16 +960,16 @@ events__annonce__title {
     
  
 
-    /* ********************VIDEO ZONE**@MEDIA 1042PX****************** */
+    /* ********************VIDEO ZONE**@MEDIA 1024px****************** */
     #video__zone-quote {
         font-size: 1.2em;
         background-color: rgb(241, 232, 145);
         display: inline-block;
     }
 
-    /* *****************ASIDE****@MEDIA 1042PXx***************** */
+    /* *****************ASIDE****@MEDIA 1024px***************** */
 
-    /* **************INFO ZONE @MEDIA 1042PX********* */
+    /* **************INFO ZONE @MEDIA 1024px********* */
       .info__questions__section {
         
         margin: 0 1%;
@@ -1013,7 +1021,7 @@ events__annonce__title {
         margin-top: 2%;
     } 
 
-    /* ******************QUESTIONS ZONE*@MEDIA 1042PX**********/
+    /* ******************QUESTIONS ZONE*@MEDIA 1024px**********/
       .aside__article__questions {
             padding-top: 1%;
             
@@ -1066,7 +1074,7 @@ events__annonce__title {
         .recette a {
             cursor: pointer;
         } 
-        /* *********************aside__events*@MEDIA 1042PX************ */
+        /* *********************aside__events*@MEDIA 1024px************ */
          .aside__events {
             width: 100%;
             display: flex;
@@ -1186,12 +1194,18 @@ events__annonce__title {
     padding-right: 10px;
     
     }
-    .nav__bar li,
-    #nav__info__questions li {
+    #nav__main .nav__item a,
+    #nav__info__questions .nav__item a  {
         
-        font-size: 1em;    
+        font-size: 1.2em; 
+        font-weight: 500;   
     }
-
+  
+     #wrap_item5,
+    #wrap_item2
+     {
+        width: 20%;
+    } 
     /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
   
 
