@@ -23,7 +23,7 @@
     }
 
     body {
-        background-color: beige;
+        background-color: rgb(206, 236, 171);
     }
 
     .header__img {
@@ -77,8 +77,8 @@
         padding: 6px;
         margin: 10px 3px;
         text-decoration: none;
-        color: blue;
-        background-color: #ece073;
+        color: rgb(7, 7, 228);
+        background-color: #f3ba8b;
         transition: 0.5s;
         border-radius: 10px;
 
@@ -96,17 +96,19 @@
 
     h1 {
         color: gold;
+        background-color: rgb(145, 5, 70);
         text-shadow: 1px 3p 5p 0.5;
         transition: 0.7s;
-        text-shadow: 1px -1px 2px rgb(0 68 255);
-        background-color: blue;
+        text-shadow: 3px 3px 2px rgb(0 68 255);
+        
         border-radius: 10px;
         padding: 5px;
+        
     }
 
     h1:hover {
-        background-color: rgb(235, 214, 96);
-        color: rgb(223, 72, 2);
+        color: rgb(241, 230, 163);
+        background-color: rgb(168, 4, 18);
         transition: 0.8s;
         text-shadow: none;
     }
@@ -143,7 +145,7 @@
     ul li {
         padding: 3%;
     }
-
+    
     #nav__main li a,
     #nav__info__questions li a {
 
@@ -151,9 +153,8 @@
         transition: 0.5s;
         text-decoration: none;
         font-weight: 700;
-
-        color: blue;
-        background-color: #ece073;
+        background-color: rgb(192, 115, 96); 
+        color: rgb(241, 230, 207);
         padding: 5px 20px;
         border-radius: 10px;
     }
@@ -166,7 +167,7 @@
 
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
-        background-color: rgb(42, 42, 158);
+        background-color: rgb(187, 68, 68); 
         color: rgb(243, 238, 233);
     }
 
@@ -204,7 +205,7 @@
     }
 
     .card__title {
-        color: rgb(173, 16, 113);
+         color: #9c3e3a;
         padding-top: 1.4em;
         padding-bottom: 2%;
         margin: 0 2.5%;
@@ -222,7 +223,7 @@
         font-weight: 500;
         padding-bottom: 2%;
         margin: 0 16%;
-        color: rgb(122, 112, 112);
+        color: rgb(99, 88, 88);
     }
 
 
@@ -239,7 +240,7 @@
 
     .link {
         color: aliceblue;
-        background-color: blue;
+        background-color: rgb(29, 129, 129);
         cursor: pointer;
         margin: 2% 0 0 0;
         padding: 5px 8px;
@@ -254,8 +255,8 @@
     }
 
     .link:hover {
-        color: rgb(18, 71, 117);
-        background-color: rgb(196, 196, 226);
+        color: rgb(9, 52, 172);
+        background-color: rgb(193, 193, 199);
         transition: 0.4s;
     }
 
@@ -298,13 +299,16 @@
     #video__zone {
         margin-top: 1.5em;
     }
-
+    .video {
+        height: 426px;
+        width: 636px;
+    }
     #video__zone-quote {
         font-weight: 600;
         font-style: italic;
         background-color: rgb(220, 238, 238);
         border-radius: 10px;
-        color: rgb(22, 22, 236);
+        color: rgb(91, 7, 247);
         padding: 0.5em 2em;
         width: 100%;
     }
@@ -326,7 +330,7 @@
 
     .info__title,
     .questions__title {
-        color: rgb(102, 19, 179);
+        color: rgb(11, 36, 117);
         padding: 7% 1%;
         letter-spacing: 2px;
         font-size: 1.4em;
@@ -353,7 +357,7 @@
 
 
     .questions__text {
-        color: darkslategray;
+        color: rgb(37, 56, 56);
     }
 
 
@@ -377,7 +381,7 @@
 
     .adresse {
         font-size: 1.6em;
-        color: rgb(23, 17, 87);
+        color: rgb(34, 25, 134);
         margin: 4% 1%;
     }
 
@@ -423,7 +427,7 @@
     }
 
     .fa-instagram {
-        background: #c72d2d;
+        background: #c72d60;
         color: white;
     }
 
@@ -433,10 +437,7 @@
     }
 
     /****************page ENENTS**-@MEDIA min-width: 375px************* */
-    .video {
-        height: 426px;
-        width: 636px;
-    }
+    
 
     .event__info {
         background-color: rgb(116, 128, 16);
@@ -447,7 +448,7 @@
 
     }
 
-    events__img__gluten_free {
+    #events__img__gluten_free {
         width: 115px;
         height: 115px;
 
@@ -503,12 +504,6 @@
         margin: 2px;
     }
 
-    body {
-        background-color: rgb(238, 238, 173);
-
-    }
-
-
     .logo__content {
         display: flex;
         align-items: center;
@@ -532,14 +527,12 @@
     h1 {
         border: 2px solid #3B5998;
         border-radius: 4px;
-        text-shadow: 4px 1px 1px rgb(0 68 255);
+        text-shadow: 2px 1px 1px rgb(0 68 255);
         font-size: 2.5em;
-        background-color: #bb3e3e;
+        
     }
 
     h1:hover {
-
-        color: rgb(245, 239, 207);
         transition: 0.5s;
         letter-spacing: 3px;
     }
@@ -561,8 +554,9 @@
     }
 
     .nav__bar {
-        background-color: rgb(230, 80, 80);
-    }
+        /* background-color: rgb(192, 115, 96);  */
+        background-color: rgb(209, 141, 124); 
+    } 
 
     #nav__main {
         display: flex;
@@ -578,7 +572,7 @@
     #nav__info__questions li a {
         border-radius: 0 20px 0 20px;
 
-        background-color: #c0b65d;
+        background-color: #777032;
         color: rgb(250, 250, 255);
         font-size: 1em;
 
@@ -600,9 +594,7 @@
 
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
-        background-color: rgb(74, 168, 45);
-        color: rgb(243, 238, 233);
-        padding: 15px;
+               padding: 5px 35px;
     }
 
 
@@ -726,7 +718,7 @@
     }
 
     .questions__title {
-        color: rgb(20, 102, 102);
+        color: rgb(8, 65, 65);
         padding-top: 3%;
         font-size: 1.5em;
         padding-bottom: 40px;
@@ -755,17 +747,6 @@
 /* *********************@MEDIA 1024px********************************* */
 
 @media screen and (min-width: 1024px) {
-    body {
-        background-color: rgb(246, 248, 144);
-
-    }
-
-
-    .don__item {
-
-        color: rgb(7, 7, 228);
-        background-color: #f3ba8b;
-    }
 
     .don__item:nth-child(3) {
         padding: 5px 40px 5px 40px;
@@ -779,7 +760,7 @@
     h1 {
         border: none;
         text-shadow: rgb(0 68 255) -5px 2px 4px;
-        background-color: rgb(145, 5, 70);
+       
         padding: 9px;
     }
 
@@ -800,7 +781,6 @@
 
     .nav__bar {
         border-radius: 5px;
-        background-color: rgb(94, 139, 51);
         padding-right: 5px;
         display: flex;
         margin: 2% 0 0 0;
@@ -824,7 +804,7 @@
         padding: 5px 7px;
         font-size: 20px;
         margin: 3px;
-        color: white;
+        
     }
 
     #nav__info__questions li a {
@@ -834,10 +814,9 @@
     
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
-        background-color: rgb(193, 241, 115);
-        color: rgb(97, 67, 7);
+       
         transition: 0.3s;
-        padding: 5px 7px;
+        padding: 5px 10px;
     }
 
     /* **********header image**@MEDIA 1024px******* */
@@ -865,8 +844,9 @@
 
     .cards__video,
     #aside__section {
-        background-color: rgb(240, 166, 132);
-        border: 1px solid rgb(40, 61, 182);
+        
+        background-color: rgb(209, 141, 124); 
+        border: 1px solid rgb(59, 161, 98);
         border-radius: 10px 10px 0 0;
 
     }
@@ -879,7 +859,7 @@
     #aside__section {
         width: 36%;
         margin: 0;
-        background-color: rgb(243, 188, 156);
+        
     }
 
 
@@ -924,7 +904,6 @@
     /* ********************VIDEO ZONE**@MEDIA 1024px****************** */
     #video__zone-quote {
         font-size: 1.2em;
-        background-color: rgb(241, 232, 145);
         display: inline-block;
 
     }
@@ -962,7 +941,7 @@
 
     .info__title {
         padding-top: 30px;
-        color: rgb(102, 19, 179);
+        
         font-size: 1.4em;
         letter-spacing: 1px;
     }
@@ -999,6 +978,7 @@
 
     .rect__title {
         border-radius: 0 0 0 0;
+        
     }
 
     .questions__title {
@@ -1008,7 +988,7 @@
 
 
     .questions__title {
-        color: rgb(11, 8, 190);
+        color: rgb(11, 36, 117);
 
     }
 
@@ -1087,7 +1067,8 @@
     /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
     .nav__bar {
         border-radius: 10px;
-        background-color: rgb(192, 115, 96);
+        /* supprimer */
+         background-color: rgb(192, 115, 96); 
         margin: 1% 0;
     }
 
@@ -1114,9 +1095,9 @@
         margin: 0 1%;
     }
 
-    .card__title {
+    /* .card__title {
         color: #9e0e09;
-    }
+    } */
 
     .link {
         margin-top: 10px;
@@ -1124,8 +1105,8 @@
     }
 
     .link:hover {
-        color: rgb(9, 52, 172);
-        background-color: rgb(196, 196, 226);
+        /* color: rgb(9, 52, 172);
+        background-color: rgb(196, 196, 226); */
         transition: 0.4s;
     }
 

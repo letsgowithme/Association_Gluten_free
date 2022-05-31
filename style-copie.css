@@ -1018,7 +1018,7 @@
         .recette a {
             cursor: pointer;
         } 
-        /* *********************EVENTS ASIDE*@MEDIA 1042PX************ */
+        /* *********************aside__events*@MEDIA 1042PX************ */
          .aside__events {
             width: 100%;
             display: flex;
