@@ -18,8 +18,7 @@
         font-family: 'Playfair Display', serif;
         scroll-behavior: auto;
         overflow-x: hidden;
-        overflow-y: s;
-
+        overflow-y: visible;
 
     }
 
@@ -41,7 +40,7 @@
     }
 
     .logo__title {
-        font-size: 2em;
+        font-size: 1.6em;
         color: rgb(17, 10, 119);
         font-family: 'Libre Baskerville', serif;
 
@@ -69,11 +68,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        text-align: center;
 
     }
 
     .don__item {
-        font-size: 1.7em;
+        font-size: 1.4em;
         padding: 6px;
         margin: 10px 3px;
         text-decoration: none;
@@ -83,11 +83,13 @@
         border-radius: 10px;
 
     }
-
+    .don__item:nth-child(3) {
+        padding: 5px 10px 5px 35px;
+    }
 
     .don__item:hover {
         background-color: gray;
-        color: rgb(142, 212, 180);
+        color: rgb(98, 243, 178);
         border-radius: 10px;
     }
 
@@ -96,12 +98,15 @@
         text-shadow: 1px 3p 5p 0.5;
         transition: 0.7s;
         text-shadow: 1px -1px 2px rgb(0 68 255);
+        background-color: blue;
+        border-radius: 10px;
+        padding: 5px;
     }
 
     h1:hover {
-
-        color: rgb(133, 117, 26);
-        transition: 0.5s;
+        background-color: rgb(235, 214, 96);
+        color: rgb(223, 72, 2);
+        transition: 0.8s;
         text-shadow: none;
     }
 
@@ -173,7 +178,6 @@
         display: flex;
         justify-content: space-between;
 
-
     }
 
     #nav__info__questions li a {
@@ -214,13 +218,10 @@
 
     .card__text {
         font-family: 'Roboto Slab', serif;
-
         font-weight: 500;
         padding-bottom: 2%;
         margin: 0 16%;
-
         color: rgb(122, 112, 112);
-
     }
 
 
@@ -288,7 +289,7 @@
         opacity: 1;
         transition: 0.4s;
         padding: 12px 6px 2px 6px;
-     
+
 
     }
 
@@ -359,7 +360,7 @@
         margin-bottom: 2%;
     }
 
-    #recettes {
+    #recettes__section {
         display: none;
         visibility: hidden;
     }
@@ -498,9 +499,7 @@
 
     body,
     * {
-
         margin: 2px;
-
     }
 
     body {
@@ -518,46 +517,18 @@
         font-size: 1.4em;
     }
 
-    .logo__title,
-    h1,
-    .nav__bar {
-        padding-bottom: 0.7em;
-    }
-
-    .logo__title,
-    .questions__title {
-        letter-spacing: 2px;
-    }
 
     .don {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+    }
+
+    .don__item:nth-child(3) {
+        padding: 10px 25px;
 
     }
 
-    .don__item {
-        font-size: 1.3em;
-        padding: 6px;
-        margin: 10px 3px;
-        text-decoration: none;
-        color: blue;
-        background-color: #ece073;
-        transition: 0.5s;
-        border-radius: 10px;
-
-    }
-
-
-    .don__item:hover {
-        background-color: gray;
-        color: rgb(48, 241, 225);
-        border-radius: 10px;
-    }
 
     h1 {
-        color: gold;
-        transition: 0.7s;
         border: 2px solid #3B5998;
         border-radius: 4px;
         text-shadow: 4px 1px 1px rgb(0 68 255);
@@ -569,25 +540,16 @@
 
         color: rgb(245, 239, 207);
         transition: 0.5s;
-        text-shadow: none;
         letter-spacing: 3px;
     }
 
     p {
-        font-family: 'Cairo', sans-serif;
         font-size: 2em;
     }
 
-    #logo__title {
-        font-weight: 600;
-    }
-
-
     /* ----------------Nav bar-@media min-width: 758px------------------------------- */
     ul {
-        list-style: none;
-        display: flex;
-        text-align: center;
+       
         flex-wrap: wrap;
         justify-content: space-between;
 
@@ -597,22 +559,26 @@
         padding: 1%;
     }
 
-    #nav__main li a {
-        cursor: pointer;
-        transition: 0.5s;
-        text-decoration: none;
-        font-weight: 700;
-        color: blue;
-        border-radius: 10px;
-        background: none;
-        background-color: rgb(156, 241, 129);
+    .nav__bar {
+        background-color: rgb(230, 80, 80);
     }
-
+    #nav__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     #nav__main li {
-
-        padding: 3px 0;
-        border-radius: 10px;
+        padding: 3px 0;  
     }
+   
+
+    #nav__main li a,
+    #nav__info__questions li a {
+        background-color: rgb(154, 243, 127);
+        font-size: 1em;
+        display: grid;
+    }
+    
 
     #nav__main li #home {
         display: none;
@@ -620,54 +586,27 @@
     }
 
     #nav__info__questions li {
-        display: flex;
         justify-content: center;
-
-
     }
 
     #nav__info__questions li a {
-
-        cursor: pointer;
-        transition: 0.5s;
-        text-decoration: none;
-        padding: 5px 20px;
+        
         margin: 0 30px;
-        border-radius: 10px;
     }
 
-    #nav__main li a:hover {
+    #nav__main li a:hover,
+    #nav__info__questions li a:hover {
         background-color: rgb(74, 168, 45);
         color: rgb(243, 238, 233);
-
     }
 
-    #nav__main a,
-    #nav__info__questions li a {
-
-        font-size: 1em;
-    }
-
-    #nav__main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+   
 
     /* **********header image**@media min-width: 758px******* */
     .header__img {
         display: block;
         padding-bottom: 50px;
-
     }
-
-
-
-    #nav__info__questions li a {
-
-        font-size: 1em;
-    }
-
 
 
     /******************* CARD SECTIONS **@media min-width: 758px***********************/
@@ -688,7 +627,7 @@
 
         padding-top: 1em;
         padding-bottom: 10px;
-        margin: 0 2.5%;
+       
 
     }
 
@@ -697,13 +636,9 @@
         font-size: 1.2em;
         margin: 0;
         padding: 0 0 10px 0;
-
-
-
     }
 
     .card__img {
-        padding-bottom: 2%;
         height: 450px;
         width: 636px;
         margin: 3% 1%;
@@ -712,18 +647,7 @@
     .link {
         margin-top: 10px;
         font-size: 1.2em;
-
-
     }
-
-    .link:hover {
-        color: rgb(9, 52, 172);
-        background-color: rgb(196, 196, 226);
-        transition: 0.4s;
-
-    }
-
-
 
 
     /* ********************VIDEO ZONE***@media min-width:758px8px*************** */
@@ -754,17 +678,13 @@
     }
 
     .info__text {
-
         font-size: 1.2em;
-
 
     }
 
     .info__title {
-        color: rgb(102, 19, 179);
         padding: 2% 1%;
         font-size: 1.6em;
-        letter-spacing: 2px;
         font-family: 'Libre Baskerville', serif;
     }
 
@@ -782,9 +702,6 @@
         width: 120px;
     }
 
-    aside hr {
-        padding: 2% 0;
-    }
 
     /* ******************QUESTIONS ZONE*@media min-width: 758px*********/
     .aside__article__questions {
@@ -805,24 +722,8 @@
     }
 
     .questions__text {
-        color: darkslategray;
         font-size: 1.4em;
 
-    }
-
-
-    #last__btn {
-        margin-bottom: 2%;
-    }
-
-    /****************page ENENTS*@media min-width: 758px************** */
-    .video {
-        height: 426px;
-        width: 636px;
-    }
-
-    .event__info {
-        background-color: rgb(116, 128, 16);
     }
 
     .aside__article__info {
@@ -856,7 +757,7 @@
     }
 
     .don__item:nth-child(3) {
-        padding: 5px 35px 5px 20px;
+        padding: 5px 40px 5px 40px;
     }
 
     .don__item:nth-child(2) {
@@ -885,11 +786,13 @@
 
 
     /* ----------------Nav bar--@MEDIA 1024px----------------------------- */
+
     .nav__bar {
+        border-radius: 5px;
+        background-color: rgb(94, 139, 51);
+        padding-right: 30px;
         display: flex;
-        margin: 2% 3%;
-
-
+        margin: 2% 0 0 0;
     }
 
     .nav__item__home {
@@ -908,8 +811,12 @@
         padding: 5px 7px;
         font-size: 20px;
         margin: 3px;
+        color: white;
+    }
 
-
+    #nav__info__questions li a {
+        letter-spacing: 0.01px;
+      
     }
 
     #nav__main .nav__item,
@@ -918,24 +825,19 @@
         margin: 0;
     }
 
-
-
     #nav__main li a:hover,
     #nav__info__questions li a:hover {
-        background-color: rgb(3, 120, 199);
-        color: rgb(243, 238, 233);
-
+        background-color: rgb(193, 241, 115);
+        color: rgb(97, 67, 7);
+        transition: 0.3s;
     }
 
-
-
     /* **********header image**@MEDIA 1024px******* */
-    .header__img {
-        display: block;
-        padding-bottom: 50px;
+    .header__img {  
         margin: 0 5%;
 
     }
+
     /******************* CARD SECTIONS **@MEDIA 1024px***********************/
 
 
@@ -944,14 +846,13 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-       
     }
 
     #cards__video__aside {
         margin: 0 5%;
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     .cards__video,
@@ -959,27 +860,30 @@
         background-color: rgb(240, 166, 132);
         border: 1px solid rgb(40, 61, 182);
         border-radius: 10px 10px 0 0;
-        
+
     }
 
     .cards__video {
-
         margin: 0;
         width: 60%;
     }
 
     #aside__section {
         width: 36%;
+        margin: 0;
         background-color: rgb(243, 188, 156);
-
     }
 
+
     .section__title {
-        margin: 0;
-        font-size: 1.4em;
         display: block;
+        margin: 0;
         background-color: rgb(145, 5, 70);
+        font-size: 1.4em;
         color: aliceblue;
+        text-transform: uppercase;
+        padding: 5px;
+        border-radius: 10px 10px 0 0;
     }
 
     .card__img {
@@ -987,32 +891,31 @@
         height: 400px;
         width: 570px;
     }
-
+    .card__title {
+        font-size: 1.6em;
+        margin-bottom: 0.8em;
+    }
     .card__text,
     p {
+        color: #4c5057;
         font-size: 1em;
         font-weight: bold;
     }
-
-
-
-
+  .link {
+      font-size: 1.5em;
+  }
     /* ********************VIDEO ZONE**@MEDIA 1024px****************** */
     #video__zone-quote {
         font-size: 1.2em;
         background-color: rgb(241, 232, 145);
         display: inline-block;
-       
+
     }
-   
+
     /* *****************ASIDE****@MEDIA 1024px***************** */
 
     /* **************INFO ZONE @MEDIA 1024px********* */
-    .info__questions__section {
-
-        margin: 0 1%;
-
-    }
+    
 
     .aside__block,
     .aside__article__info,
@@ -1032,7 +935,7 @@
     .info__title {
         margin: 15px 5px 0 5px;
         padding-bottom: 10px;
-        
+
     }
 
     .info__text {
@@ -1043,7 +946,7 @@
     .info__title {
         padding-top: 30px;
         color: rgb(102, 19, 179);
-        font-size: 1em;
+        font-size: 1.4em;
         letter-spacing: 1px;
     }
 
@@ -1064,13 +967,8 @@
     hr {
         margin-top: 2%;
     }
-
+    
     /* ******************QUESTIONS ZONE*@MEDIA 1024px**********/
-    .aside__article__questions {
-        padding-top: 1%;
-
-    }
-
     #img__questions {
         padding: 10px;
         margin: 10px 0 0 0;
@@ -1081,23 +979,25 @@
     .questions__content {
         padding-bottom: 20px;
     }
-
+    .rect__title {
+        border-radius: 0 0 0 0;
+    }
     .questions__title {
         margin-bottom: 1em;
         margin-top: 1em;
     }
 
 
-
     .questions__title {
         color: rgb(11, 8, 190);
-        padding-top: 3%;
-        font-size: 1.5em;
+       
     }
 
     .questions__text {
         color: darkslategray;
         font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
 
     }
 
@@ -1107,26 +1007,20 @@
         margin-top: 50px;
     }
 
-    .recettes__title {
-        margin-top: 30px;
-        margin-bottom: 40px;
-        background-color: rgb(145, 5, 70);
-        font-size: 1.4em;
-        color: aliceblue;
-        text-transform: uppercase;
-        padding: 5px;
-    }
+    
 
     .recette {
         padding: 20px 0;
-
+        margin: 0;
     }
 
     .recette a {
         cursor: pointer;
     }
-
-   
+    #page__footer {
+        margin-top: 4%;
+    }
+}
 
 
 /* ********************@media (min-width: 1574px)****************** */
@@ -1136,7 +1030,6 @@
 @media screen and (min-width: 1574px) {
     body {
         background-color: rgb(206, 236, 171);
-
     }
 
 
@@ -1171,36 +1064,36 @@
         text-shadow: rgb(0 68 255) -5px 2px 6px;
     }
 
-
     /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
-
-
-    .nav__bar li {
-        padding-right: 10px;
-
+    .nav__bar {
+        border-radius: 10px;
+        background-color: rgb(192, 115, 96);
+        margin: 1% 0;
     }
 
     #nav__main .nav__item a,
     #nav__info__questions .nav__item a {
-
+        color: rgb(241, 230, 207);
         font-size: 1.2em;
         font-weight: 500;
     }
 
-    #wrap_item5,
-    #wrap_item2 {
-        width: 20%;
+    #nav__main .nav__item a:hover,
+    #nav__info__questions .nav__item a:hover {
+        background-color: rgb(204, 219, 117);
     }
 
+   
+
     /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
-
-
+        
     .card__img {
         padding-bottom: 2%;
         height: 20em;
         width: 30em;
         margin: 0 1%;
     }
+
     .card__title {
         color: #9e0e09;
     }
@@ -1216,39 +1109,13 @@
         transition: 0.4s;
     }
 
-
-
     /* ***************ASIDE****@media1574px**************************** */
 
     /* *******************INFO ZONE **@media (min-width: 1574px*********** */
-
-
-
-    .info__content,
-    .info__title {
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-bottom: 10px;
-    }
-
 
     .info__img {
         padding: 10px;
     }
 
 
-    /* *********************aside__events************* */
-
-
-    .btn_link_home {
-        margin-top: 30px;
-        padding: 15px;
-        text-transform: uppercase;
-    }
-
-    .events__nav__bar li {
-        font-size: 1.7em;
-
-    }
-  
 }

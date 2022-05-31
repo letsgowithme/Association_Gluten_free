@@ -504,12 +504,12 @@
     font-size: 2em;
    }
     .don__item {
-       
+        font-size: 1.2em;
         color: rgb(7, 7, 228);
         background-color: #f3ba8b;
     }
     .don__item:nth-child(3) {
-        padding: 5px 35px 5px 40px;
+        padding: 5px 35px 5px 20px;
     }    
     .don__item:nth-child(2) {
         padding: 5px 14px;
@@ -554,10 +554,10 @@
     #nav__main li a:hover {
         background-color: rgb(177, 22, 68); 
         color: rgb(243, 238, 233);
-        letter-spacing: 0.1em;
+        letter-spacing: 0.03em;
        
     }
-    /* *****************CARDS****************** */
+    /* *****************CARDS*@MEDIA 1042PX--***************** */
     .cuisine__photos__img {
         padding: 0 10px;
         height: 300px;
@@ -664,7 +664,7 @@
         padding-left: 0;
     }
         .logo__title {
-            font-size: 1.6em;
+            font-size: 1.4em;
             padding-left: 10px;
             padding-right: 20px;
         }
