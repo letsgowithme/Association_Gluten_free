@@ -7,6 +7,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+:root {
+    --main-bg-color: rgb(210, 236, 181);
+    --nav__bar-bg-color: rgb(182, 108, 89); 
+    --nav__bar_bg-hover: rgb(187, 68, 68); 
+    --text-color-light:  rgb(253, 251, 249);
+    --text-color-dark:  rgb(77, 67, 67);
+    --darkblue: rgb(17, 10, 119);
+    --middle__blue-green: rgb(3, 114, 114);
+    --main-title-bg:  rgb(101, 163, 50); 
+    --main-title-color: rgb(240, 223, 126);
+    --main-title-bg-hover: rgb(168, 4, 18);
+    --main-title-text-shadow: 3px 4px 2px rgb(134, 34, 3);  
+    --don-bg-color: rgb(182, 108, 89);
+    --golden: rgb(248, 244, 6);
+    --link-bg: rgb(47, 73, 219);
+    --link-bg-hover: rgb(142, 210, 240);
+    --link-hover-text-color: rgb(9, 67, 241);
+
+  }
+
+
 @media screen and (min-width: 375px) {
 
     body,
@@ -23,7 +44,7 @@
     }
 
     body {
-        background-color: rgb(206, 236, 171);
+        background-color: var(--main-bg-color);
     }
 
     .header__img {
@@ -41,7 +62,7 @@
 
     .logo__title {
         font-size: 1.6em;
-        color: rgb(17, 10, 119);
+        color: var(--darkblue);
         font-family: 'Libre Baskerville', serif;
 
     }
@@ -77,8 +98,8 @@
         padding: 6px;
         margin: 10px 3px;
         text-decoration: none;
-        color: rgb(7, 7, 228);
-        background-color: #f3ba8b;
+        color: var(--text-color-light);
+        background-color: var(--don-bg-color);
         transition: 0.5s;
         border-radius: 10px;
 
@@ -89,18 +110,17 @@
     }
 
     .don__item:hover {
-        background-color: gray;
-        color: rgb(98, 243, 178);
+        background-color: var(--nav__bar_bg-hover);
+        color: var(--golden);
         border-radius: 10px;
     }
 
     h1 {
-        color: gold;
-        background-color: rgb(145, 5, 70);
-        text-shadow: 1px 3p 5p 0.5;
+        letter-spacing: 2px;
+        color: var(--main-title-color);
+        background-color: var(--main-title-bg);
         transition: 0.7s;
-        text-shadow: 3px 3px 2px rgb(0 68 255);
-        
+        text-shadow: var(--main-title-text-shadow);
         border-radius: 10px;
         padding: 5px;
         
@@ -108,9 +128,10 @@
 
     h1:hover {
         color: rgb(241, 230, 163);
-        background-color: rgb(168, 4, 18);
+        background-color: var(--main-title-bg-hover);
         transition: 0.8s;
         text-shadow: none;
+        letter-spacing: 3px;
     }
 
     p {
@@ -134,6 +155,10 @@
 
 
     /* ----------------Nav bar-@MEDIA min-width: 375px------------------------------- */
+    
+    .nav__bar {
+        margin-top: 7%;
+    }
     ul {
         list-style: none;
         display: flex;
@@ -143,50 +168,41 @@
     }
 
     ul li {
-        padding: 3%;
+        padding: 1.5%;
     }
     
-    #nav__main li a,
-    #nav__info__questions li a {
+    #nav__main li a
+ {
 
         cursor: pointer;
         transition: 0.5s;
         text-decoration: none;
         font-weight: 700;
-        background-color: rgb(192, 115, 96); 
-        color: rgb(241, 230, 207);
-        padding: 5px 20px;
+        background-color: var(--nav__bar-bg-color); 
+        color: var(--text-color-light);
+        padding: 5px 10px;
         border-radius: 10px;
     }
 
-    #nav__main a {
+    #nav__main li a {
         display: block;
-        font-size: 1.8em;
+        font-size: 1.4em;
+        margin: 0;
+        
     }
 
 
-    #nav__main li a:hover,
-    #nav__info__questions li a:hover {
-        background-color: rgb(187, 68, 68); 
-        color: rgb(243, 238, 233);
+    #nav__main li a:hover
+     {
+        background-color: var(--nav__bar_bg-hover); 
+        color: var(--text-color-light);
     }
 
-    #nav__info__questions {
-        display: flex;
+    
 
-    }
+   
 
-    #nav__info__questions li {
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    #nav__info__questions li a {
-        letter-spacing: 1px;
-        font-size: 1.5em;
-    }
-
+   
 
     /******************* CARD SECTIONS *-@MEDIA min-width: 375px************************/
     .section__title,
@@ -205,7 +221,7 @@
     }
 
     .card__title {
-         color: #9c3e3a;
+         color: #a1631d;
         padding-top: 1.4em;
         padding-bottom: 2%;
         margin: 0 2.5%;
@@ -223,7 +239,7 @@
         font-weight: 500;
         padding-bottom: 2%;
         margin: 0 16%;
-        color: rgb(99, 88, 88);
+        color: var(--text-color-dark);
     }
 
 
@@ -239,8 +255,8 @@
     }
 
     .link {
-        color: aliceblue;
-        background-color: rgb(29, 129, 129);
+        color: var(--text-color-light);
+        background-color: var(--link-bg);
         cursor: pointer;
         margin: 2% 0 0 0;
         padding: 5px 8px;
@@ -255,9 +271,11 @@
     }
 
     .link:hover {
-        color: rgb(9, 52, 172);
-        background-color: rgb(193, 193, 199);
+        
+        color: var(--link-hover-text-color);
+        background-color: var(--link-bg-hover);
         transition: 0.4s;
+        
     }
 
     .btn {
@@ -350,14 +368,14 @@
         height: inherit;
     }
 
-    /* ******************QUESTIONS ZONE**-@MEDIA min-width: 375px*********/
+    /* ********QUESTIONS ZONE**-@MEDIA min-width: 375px*********/
     .aside__article__questions {
         padding-top: 9%;
     }
 
 
     .questions__text {
-        color: rgb(37, 56, 56);
+        color: var(--text-color-dark);
     }
 
 
@@ -370,7 +388,7 @@
         visibility: hidden;
     }
 
-    /************************* FOOTER**-@MEDIA min-width: 375px******************** */
+    /************ FOOTER**-@MEDIA min-width: 375px******************** */
     #page__footer {
         margin-top: 8%;
         display: flex;
@@ -381,7 +399,7 @@
 
     .adresse {
         font-size: 1.6em;
-        color: rgb(34, 25, 134);
+        color: var(--darkblue);
         margin: 4% 1%;
     }
 
@@ -392,7 +410,7 @@
     #page__footer p {
         padding: 0.3em 1em;
         font-size: 1em;
-        color: rgb(17, 10, 119);
+        color: var(--darkblue);
     }
 
     .icons {
@@ -436,7 +454,7 @@
         color: white;
     }
 
-    /****************page ENENTS**-@MEDIA min-width: 375px************* */
+    /*****page ENENTS**-@MEDIA min-width: 375px************* */
     
 
     .event__info {
@@ -494,14 +512,15 @@
 }
 
 
-/* ******************VERSION TABLETTE*@media min-width: 758px ************* */
-/* ******************version tablette**@media min-width: 758px************* */
-/* ******************version tablette**@media min-width: 758px************* */
-@media screen and (min-width: 758px) {
+/* ***VERSION TABLETTE*@media min-width: 800px ************* */
+/*****version tablette**@media min-width: 800px************* */
+/* ***version tablette**@media min-width: 800px************* */
+@media screen and (min-width: 800px) {
 
     body,
     * {
-        margin: 2px;
+        margin: 0.7%;
+       
     }
 
     .logo__content {
@@ -515,19 +534,21 @@
 
 
     .don {
+        justify-content: center;
         align-items: center;
     }
-
-    .don__item:nth-child(3) {
-        padding: 10px 25px;
-
+    .don__item a {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: block;
     }
-
+   
 
     h1 {
-        border: 2px solid #3B5998;
+       
         border-radius: 4px;
-        text-shadow: 2px 1px 1px rgb(0 68 255);
         font-size: 2.5em;
         
     }
@@ -541,7 +562,14 @@
         font-size: 2em;
     }
 
-    /* ----------------Nav bar-@media min-width: 758px------------------------------- */
+    /* ---Nav bar-@media min-width: 800px------------------------------- */
+    .nav__bar {
+        margin-top: 1%;
+    }
+    .nav__bar {
+        
+        background-color: var(--nav__bar-bg-color); 
+    } 
     ul {
 
         flex-wrap: wrap;
@@ -552,61 +580,41 @@
     ul li {
         padding: 1%;
     }
-
-    .nav__bar {
-        /* background-color: rgb(192, 115, 96);  */
-        background-color: rgb(209, 141, 124); 
-    } 
+   
 
     #nav__main {
         display: flex;
         flex-direction: row;
+        /* justify-content:center; */
         justify-content: space-between;
     }
 
+    #nav__main li a {  
+         color: rgb(250, 250, 255);
+        font-size: 0.9em;
+        margin: 0;
+        padding: 2px;
+    }
     #nav__main li {
-        padding: 3px 0;
+        margin: 0;
+        padding: 2px 4px;
     }
+    
 
-    #nav__main li a,
-    #nav__info__questions li a {
-        border-radius: 0 20px 0 20px;
-
-        background-color: #777032;
-        color: rgb(250, 250, 255);
-        font-size: 1em;
-
-    }
-
-    #nav__main li #home {
-        display: none;
-        visibility: hidden;
-    }
-
-    #nav__info__questions li {
-        justify-content: center;
-    }
-
-    #nav__info__questions li a {
-
-        margin: 0 30px;
-    }
-
-    #nav__main li a:hover,
-    #nav__info__questions li a:hover {
-               padding: 5px 35px;
-    }
+    #nav__main li a:hover {
+               padding: 5px 15px;
+    } 
 
 
 
-    /* **********header image**@media min-width: 758px******* */
+    /* ****header image**@media min-width: 800px******* */
     .header__img {
         display: block;
         padding-bottom: 50px;
     }
 
 
-    /******************* CARD SECTIONS **@media min-width: 758px***********************/
+    /***** CARD SECTIONS **@media min-width: 800px****************/
     .section__title,
     .card__section,
     .aside__article__questions {
@@ -617,7 +625,6 @@
     .section__title {
         padding: 5px 10px;
         font-size: 2em;
-
     }
 
     .card__title {
@@ -653,15 +660,15 @@
     }
 
 
-    /* ********************VIDEO ZONE***@media min-width:758px8px*************** */
+    /******VIDEO ZONE***@media min-width:800px*********** */
 
     #video__zone-quote {
         font-size: 1.4em;
     }
 
-    /* ***************ASIDE**@media min-width: 758px****************************** */
+    /* *********ASIDE**@media min-width: 800px***************** */
 
-    /* *******************INFO ZONE **@media min-width: 758px*********** */
+    /* ******INFO ZONE **@media min-width: 800px*********** */
     .info__questions__section {
 
         margin: 0 1%;
@@ -706,7 +713,7 @@
     }
 
 
-    /* ******************QUESTIONS ZONE*@media min-width: 758px*********/
+    /* ****QUESTIONS ZONE*@media min-width: 800px*********/
     .aside__article__questions {
         padding-top: 1%;
 
@@ -718,7 +725,7 @@
     }
 
     .questions__title {
-        color: rgb(8, 65, 65);
+        color: var(--middle__blue-green);
         padding-top: 3%;
         font-size: 1.5em;
         padding-bottom: 40px;
@@ -747,7 +754,9 @@
 /* *********************@MEDIA 1024px********************************* */
 
 @media screen and (min-width: 1024px) {
-
+    
+  
+    
     .don__item:nth-child(3) {
         padding: 5px 40px 5px 40px;
     }
@@ -758,9 +767,7 @@
 
 
     h1 {
-        border: none;
-        text-shadow: rgb(0 68 255) -5px 2px 4px;
-       
+        border: none;       
         padding: 9px;
     }
 
@@ -779,44 +786,35 @@
 
     /* ----------------Nav bar--@MEDIA 1024px----------------------------- */
 
-    .nav__bar {
-        border-radius: 5px;
-        padding-right: 5px;
-        display: flex;
-        margin: 2% 0 0 0;
+  .nav__bar {
+      padding: 0;
+      margin-top: 0;
+  }
+
+
+    #wrap_item5
+     {
+        width: 15%;
+
     }
-
-    .nav__item__home {
-        display: none;
-
-    }
-
-    #wrap_item5,
     #wrap_item2 {
-        width: 20%;
-
+        width: 12%;
     }
 
-    #nav__main li a,
-    #nav__info__questions li a {
+    #nav__main li a
+    {
         border-radius: 10px;
         background: none;
-        padding: 5px 7px;
-        font-size: 20px;
-        margin: 3px;
+        font-size: 16px;
+        padding: 5px;
+        margin: 0;
         
     }
 
-    #nav__info__questions li a {
-        letter-spacing: 0.01px;
-
-    }
-    
-    #nav__main li a:hover,
-    #nav__info__questions li a:hover {
-       
+    #nav__main li a:hover
+     {
         transition: 0.3s;
-        padding: 5px 10px;
+        padding: 5px;
     }
 
     /* **********header image**@MEDIA 1024px******* */
@@ -1023,17 +1021,13 @@
 }
 
 
+
 /* ********************@media (min-width: 1574px)****************** */
 /* ********************@media (min-width: 1574px)******************* */
 /* ********************@media (min-width: 1574px)********************* */
 
 @media screen and (min-width: 1574px) {
-    body {
-        background-color: rgb(206, 236, 171);
-    }
-
-
-    #logo {
+     #logo {
         margin-left: 0;
         padding-left: 0;
     }
@@ -1056,37 +1050,36 @@
 
     h1 {
         font-size: 2.7em;
+        text-shadow: rgb(0 68 255) -5px 2px 6px;
     }
 
     h1:hover {
         letter-spacing: 4px;
         color: rgb(250, 240, 106);
-        text-shadow: rgb(0 68 255) -5px 2px 6px;
+        
     }
 
-    /* ----------------Nav bar--@media (min-width: 1574px------------------------------ */
+    /* ----Nav bar--@media (min-width: 1574px----------- */
     .nav__bar {
-        border-radius: 10px;
-        /* supprimer */
-         background-color: rgb(192, 115, 96); 
+        border-radius: 5px;
+        padding: 0;
         margin: 1% 0;
+        display: block;
+       
     }
 
-    #nav__main .nav__item a,
-    #nav__info__questions .nav__item a {
+    #nav__main .nav__item a
+    {
         color: rgb(241, 230, 207);
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 500;
     }
 
-    #nav__main .nav__item a:hover,
-    #nav__info__questions .nav__item a:hover {
-        background-color: rgb(204, 219, 117);
-    }
+   
 
 
 
-    /******************* CARD SECTIONS **@media (min-width: 1574px***********************/
+    /******** CARD SECTIONS **@media (min-width: 1574px***********************/
 
     .card__img {
         padding-bottom: 2%;
