@@ -636,13 +636,13 @@
     #nav__main {
         display: flex;
         flex-direction: row;
-        /* justify-content:center; */
+        
         justify-content: space-between;
     }
 
     #nav__main li a {  
          color: rgb(250, 250, 255);
-        font-size: 0.9em;
+        font-size: 0.8em;
         margin: 0;
         padding: 2px;
     }
@@ -907,23 +907,24 @@
       margin-top: 0;
   }
 
-
-    #wrap_item5
+  #wrap_item1 {
+    width: 12%;
+}
+    #wrap_item4
      {
-        width: 15%;
+        width: 18%;
 
     }
-    #wrap_item2 {
-        width: 12%;
-    }
+   
 
     #nav__main li a
     {   
         border-radius: 10px;
         background: none;
-        font-size: 1em;
-        padding: 5px;
+        font-size: 0.7em;
+        padding: 5px 2px;
         margin: 0;
+        width: auto;
         
     }
 
