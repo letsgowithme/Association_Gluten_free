@@ -9,7 +9,7 @@
 
 :root {
     --main-bg-color: rgb(210, 236, 181);
-    --nav__bar-bg-color: rgb(182, 108, 89); 
+    --nav__bar-bg-color: rgb(177, 67, 40); 
     --nav__bar_bg-hover: rgb(187, 68, 68); 
     --text-color-light:  rgb(253, 251, 249);
     --text-color-dark:  rgb(77, 67, 67);
@@ -19,7 +19,7 @@
     --main-title-color: rgb(240, 223, 126);
     --main-title-bg-hover: rgb(168, 4, 18);
     --main-title-text-shadow: 3px 4px 2px rgb(134, 34, 3);  
-    --don-bg-color: rgb(182, 108, 89);
+    --don-bg-color: rgb(204, 107, 83);
     --golden: rgb(248, 244, 6);
     --link-bg: rgb(47, 73, 219);
     --link-bg-hover: rgb(142, 210, 240);
@@ -221,7 +221,7 @@
     }
 
     .card__title {
-         color: #a1631d;
+         color: #a02809;
         padding-top: 1.4em;
         padding-bottom: 2%;
         margin: 0 2.5%;
@@ -824,7 +824,9 @@
     }
 
     /******************* CARD SECTIONS **@MEDIA 1024px***********************/
-
+    .card__section {
+        margin: 0;
+    }
 
     #main {
         display: flex;
@@ -843,7 +845,7 @@
     .cards__video,
     #aside__section {
         
-        background-color: rgb(209, 141, 124); 
+        background-color: rgb(230, 179, 167); 
         border: 1px solid rgb(59, 161, 98);
         border-radius: 10px 10px 0 0;
 
@@ -870,6 +872,7 @@
         text-transform: uppercase;
         padding: 5px;
         border-radius: 10px 10px 0 0;
+        letter-spacing: 1.5px;
     }
 
     .card__img {
@@ -886,6 +889,7 @@
     .card__title {
         font-size: 1.6em;
         margin-bottom: 0.8em;
+        padding: 1% 2% 1% 2%;
     }
 
     .card__text,
@@ -927,8 +931,8 @@
 
     .info__content,
     .info__title {
-        margin: 15px 5px 0 5px;
-        padding-bottom: 10px;
+        margin: 30px 30px 0 30px;
+        
 
     }
 
@@ -938,14 +942,13 @@
     }
 
     .info__title {
-        padding-top: 30px;
-        
-        font-size: 1.4em;
+        padding-top: 60px 15px 10px 15px;
+        font-size: 1.3em;
         letter-spacing: 1px;
     }
 
     .btn__info {
-        margin-bottom: 2.5em;
+        margin-bottom: 3.5em;
     }
 
     .info__img {
@@ -1001,13 +1004,14 @@
     #recettes__section {
         display: block;
         visibility: visible;
-        margin-top: 50px;
+        margin: 50px 0 30px 0;
+        
     }
 
 
 
     .recette {
-        padding: 20px 0;
+        padding: 30px 0;
         margin: 0;
     }
 
@@ -1088,9 +1092,7 @@
         margin: 0 1%;
     }
 
-    /* .card__title {
-        color: #9e0e09;
-    } */
+  
 
     .link {
         margin-top: 10px;
@@ -1098,8 +1100,7 @@
     }
 
     .link:hover {
-        /* color: rgb(9, 52, 172);
-        background-color: rgb(196, 196, 226); */
+       
         transition: 0.4s;
     }
 
