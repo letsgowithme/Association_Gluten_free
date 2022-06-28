@@ -807,23 +807,16 @@
 
     .nav__bar__events {
         margin-top: 1%;
-    }
-
-    .nav__bar__events {
-
         background-color: var(--nav__bar-bg-color);
     }
 
-    #nav__main__events {
-        display: flex;
+   
 
-        justify-content: space-between;
-
-    }
-
+   
     #nav__main__events .nav__item {
         padding: 1%;
         margin: 0;
+        
 
     }
 
@@ -837,7 +830,7 @@
     .events__nav__bar__link {
         display: flex;
         color: rgb(250, 250, 255);
-        font-size: 1em;
+        font-size: 1.2em;
         letter-spacing: 1px;
         margin: 0;
         padding: 2px;
