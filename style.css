@@ -10,14 +10,14 @@
 :root {
     --main-bg-color: rgb(210, 236, 181);
     --nav__bar-bg-color: rgb(177, 67, 40); 
-    --nav__bar_bg-hover: rgb(187, 68, 68); 
+    --nav__bar_bg-hover: rgb(68, 187, 84); 
     --text-color-light:  rgb(253, 251, 249);
     --text-color-dark:  rgb(77, 67, 67);
     --darkblue: rgb(17, 10, 119);
     --middle__blue-green: rgb(3, 114, 114);
-    --main-title-bg:  rgb(101, 163, 50); 
+    --main-title-bg:  rgb(116, 180, 63); 
     --main-title-color: rgb(240, 223, 126);
-    --main-title-bg-hover: rgb(168, 4, 18);
+    --main-title-bg-hover: rgb(194, 43, 56);
     --main-title-text-shadow: 3px 4px 2px rgb(134, 34, 3);  
     --don-bg-color: rgb(204, 107, 83);
     --golden: rgb(248, 244, 6);
@@ -509,7 +509,6 @@
         font-size: 1.4em;
     }
 
-/* ************---EVENTS*@media min-width 375px ---******/
 
 
     .nav__bar__events {
@@ -924,7 +923,7 @@
     {   
         border-radius: 10px;
         background: none;
-        font-size: 0.7em;
+        font-size: 0.8em;
         padding: 5px 2px;
         margin: 0;
         width: auto;
